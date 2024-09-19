@@ -4,12 +4,38 @@ html
     font-optical-sizing: auto;
     font-weight: auto;
     font-style: normal;
+    padding-top: 10px;
 }
 .navSpace
 {
     padding: 5px;
     text-align: center;
     vertical-align: center;
+}
+/* NavBar Animations */
+.navbar {
+    background-color: transparent;
+    height: 50px;
+    transition: background-color 0.5s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: visible;
+    position: relative;
+}
+
+.brand-logo {
+    width: 400px;
+    transition: width 0.5s ease; /* Animación de cambio de tamaño */
+    max-height: none;
+    object-fit: contain; 
+    position: absolute;
+    top: -10px;
+}
+
+.scrolled .brand-logo {
+    width: 50px;
+    top: -10px;
 }
 body
 {

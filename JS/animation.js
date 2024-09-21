@@ -7,3 +7,6 @@ window.onscroll = function() {
         navbar.classList.remove('scrolled');
     }
 };
+$('.dropdown-toggle').on('click', function () {
+    $(this).next('.dropdown-menu').toggleClass('show');
+});

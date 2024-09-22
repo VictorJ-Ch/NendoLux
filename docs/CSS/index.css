@@ -16,6 +16,10 @@ html
     text-align: center;
     vertical-align: center;
 }
+.icono-navbar {
+    width: 24px;
+    height: 24px;
+}
 /* NavBar Animations */
 .navbar {
     background-color: transparent;
@@ -25,9 +29,10 @@ html
     justify-content: center;
     align-items: center;
     overflow: visible;
-    position: relative;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
 }
-
 .brand-logo {
     width: 200px;
     transition: width 0.5s ease; /* Animación de cambio de tamaño */
@@ -36,10 +41,15 @@ html
     position: absolute;
     top: 10px;
 }
-
 .scrolled .brand-logo {
+    padding-top: 15px;
     width: 50px;
     top: -10px;
+}
+.scrolled
+{
+    background-color: #B0B0B0;
+    transition: background-color 0.5 ease;
 }
 @media (max-width: 992px) {
     .navbar-nav.ms-auto.mb-2.mb-lg-0.align-items-center.d-flex {
@@ -54,6 +64,12 @@ body
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+.cover {
+    margin-top: 0;
+    width: 100%;
+    position: relative;
+    z-index: 1;
 }
 .padding20
 {

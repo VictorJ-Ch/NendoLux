@@ -16,3 +16,4 @@ NendoLux es una empresa de e-commerce especializada en la venta de Nendoroids de
 - Adaptación a formato web.
 - Mockup Package NendoLux.
 - Términos Legales.
+- Despliegue de la app.

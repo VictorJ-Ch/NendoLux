@@ -57,6 +57,25 @@ html
         top: -30px;
     }
 }
+/*Clicking OPtions*/
+#myAccount {
+    top: 100%; /* Lo posiciona justo debajo del ícono */
+    left: 0;   /* Alinea el menú a la izquierda del ícono */
+    z-index: 1000; /* Se asegura de que esté por encima de otros elementos */
+    min-width: 200px; /* Define un ancho mínimo para el dropdown */
+}
+
+#myAccount a {
+    display: block;
+    padding: 5px 10px;
+    color: #000;
+}
+
+#myAccount a:hover {
+    background-color: #f8f9fa;
+    color: #0056b3;
+}
+
 body
 {
     background-color: #F7F7F7 !important;

@@ -51,31 +51,102 @@ html
     background-color: #B0B0B0;
     transition: background-color 0.5 ease;
 }
+.navbar-nav .nav-item {
+    margin-right: 100px; /* Ajusta el valor según lo necesites */
+}
+
+@media (max-width: 992px) {
+    .navbar-nav .nav-item {
+        margin-right: 100px; /* Puedes ajustar este valor también para móviles */
+    }
+}
 @media (max-width: 992px) {
     .navbar-nav.ms-auto.mb-2.mb-lg-0.align-items-center.d-flex {
         position: relative;
         top: -30px;
     }
 }
-/*Clicking OPtions*/
-#myAccount {
-    top: 100%; /* Lo posiciona justo debajo del ícono */
-    left: 0;   /* Alinea el menú a la izquierda del ícono */
-    z-index: 1000; /* Se asegura de que esté por encima de otros elementos */
-    min-width: 200px; /* Define un ancho mínimo para el dropdown */
+/*Clicking Options*/
+/*myCatalog*/
+#myCatalog{
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    min-width: 250px;
 }
-
-#myAccount a {
+#myCatalog a {
     display: block;
     padding: 5px 10px;
     color: #000;
 }
-
-#myAccount a:hover {
-    background-color: #f8f9fa;
-    color: #0056b3;
+#myCatalog a:hover {
+    background-color: #cbcbcb;
+    color: #333;
 }
-
+/*mySearch*/
+#mySearch{
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    min-width: 250px;
+}
+#mySearch a {
+    display: block;
+    padding: 5px 10px;
+    color: #000;
+}
+#mySearch a:hover {
+    background-color: #cbcbcb;
+    color: #333;
+}
+/*myUser*/
+#myUser{
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    min-width: 250px;
+}
+#myUser a {
+    display: block;
+    padding: 5px 10px;
+    color: #000;
+}
+#myUser a:hover {
+    background-color: #cbcbcb;
+    color: #333;
+}
+/*myBag*/
+#myBolsa{
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    min-width: 250px;
+}
+#myBolsa a {
+    display: block;
+    padding: 5px 10px;
+    color: #000;
+}
+#myBolsa a:hover {
+    background-color: #cbcbcb;
+    color: #333;
+}
+/*myContactanos*/
+#myContactanos{
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    min-width: 250px;
+}
+#myContactanos a {
+    display: block;
+    padding: 5px 10px;
+    color: #000;
+}
+#myContactanos a:hover {
+    background-color: #cbcbcb;
+    color: #333;
+}
 body
 {
     background-color: #F7F7F7 !important;

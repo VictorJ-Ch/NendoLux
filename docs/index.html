@@ -16,8 +16,14 @@
                 <div class="navbar-collapse" id="navbarSupportedContent">
                     <!--Devs-->
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-center">
-                        <li class="nav-item d-none d-lg-block">
-                            <a class="nav-link active" aria-current="page" href="#">Contáctanos</a>
+                        <li class="nav-item d-none d-lg-block position-relative me-2">
+                            <a class="nav-link active" aria-current="page" href="#" id="contactanos-bttn">Contáctanos</a>
+                            <div id="myContactanos" class="d-none position-absolute bg-white p-3 shadow">
+                                <ul class="list-unstyled mb-0">
+                                    <li class="py-2"><a href="#">Producto 1</a></li>
+                                    <li class="py-2"><a href="#">Producto 2</a></li>
+                                </ul>
+                            </div>
                         </li>
                     </ul>
                     <!-- Imagotipo-->
@@ -30,58 +36,66 @@
                     </ul>
                     <!-- bolsa, user y catálogo-->
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center d-flex justify-content-end flex-row">
-                        <!-- Dropdown Bolsa -->
-                        <li class="nav-item dropdown me-2">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <!-- Bolsa -->
+                        <li class="nav-item me-2 position-relative">
+                            <a class="nav-link active" aria-current="page" href="#" id="bolsa-icon">
                                 <img src="./IMG/Icons/BagIcon.webp" alt="Bolsa" class="icono-navbar">
                             </a>
-                            <ul class="dropdown-menu dropdown-menu-end">
-                                <li><a style="text-align: center; font-size: 20px;">Agregado a su bolsa</a></li>
-                                <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="#">Productos</a></li>
-                                <li><hr class="dropdown-divider"></li>
-                                <div class="navSpace">
-                                    <li><a class="btn btn-outline-secondary" href="#">Finalizar compra</a></li>
-                                </div>
-                                <div class="navSpace">
-                                    <li><a class="btn btn-outline-secondary" href="#">Ver su bolsa</a></li>
-                                </div>
-                            </ul>
+                            <div id="myBolsa" class="d-none position-absolute bg-white p-3 shadow">
+                                <ul class="list-unstyled mb-0">
+                                    <li class="py-2"><a href="#">Producto 1</a></li>
+                                    <li class="py-2"><a href="#">Producto 2</a></li>
+                                </ul>
+                            </div>
                         </li>
-                        <!-- Dropdown User -->
-                        <li class="nav-item dropdown me-2">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <!-- User -->
+                        <li class="nav-item me-2 position-relative">
+                            <a class="nav-link active" aria-current="page" href="#" id="user-icon">
                                 <img src="./IMG/Icons/UserIcon.webp" alt="User" class="icono-navbar">
                             </a>
-                            <ul class="dropdown-menu dropdown-menu-end">
-                                <li><a style="text-align: center; font-size: 20px;">Su cuenta</a></li>
-                                <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="#">Iniciar Sesión</a></li>
-                            </ul>
+                            <div id="myUser" class="d-none position-absolute bg-white p-3 shadow">
+                                <ul class="list-unstyled mb-0">
+                                    <li class="py-2"><a href="#">Mi cuenta</a></li>
+                                    <li class="py-2"><a href="#">Mis pedidos</a></li>
+                                </ul>
+                            </div>
                         </li>
-                        <!-- Search -->
-                        <li class="nav-item me-2">
-                            <a class="nav-link active" aria-current="page" href="#">
+                        <!-- Buscar -->
+                        <li class="nav-item me-2 position-relative">
+                            <a class="nav-link active" aria-current="page" href="#" id="search-icon">
                                 <img src="./IMG/Icons/SearchIcon.webp" alt="Buscar" class="icono-navbar">
                             </a>
+                            <div id="mySearch" class="d-none position-absolute bg-white p-3 shadow">
+                                <ul class="list-unstyled mb-0">
+                                    <li class="py-2"><a href="#">Persona 5</a></li>
+                                    <li class="py-2"><a href="#">Persona 5 Royal</a></li>
+                                    <li class="py-2"><a href="#">Persona 3</a></li>
+                                    <li class="py-2"><a href="#">Kaguya-sama: Love is War</a></li>
+                                    <li class="py-2"><a href="#">Call of the Night</a></li>
+                                    <li class="py-2"><a href="#">Kobayashi's Dragon Maid</a></li>
+                                    <li class="py-2"><a href="#">Tomo-chan is a Girl</a></li>
+                                    <li class="py-2"><a href="#">Kamikatsu</a></li>
+                                    <li class="py-2"><a href="#">Kimetsu no Yaiba</a></li>
+                                </ul>
+                            </div>
                         </li>
                         <!-- Catálogo -->
                         <li class="nav-item me-2 position-relative">
                             <a class="nav-link active" aria-current="page" href="#" id="catalogo-icon">
                                 <img src="./IMG/Icons/MoreIcon.webp" alt="Catálogo" class="icono-navbar">
                             </a>
-                            <div id="myAccount" class="d-none position-absolute bg-white p-3 shadow">
+                            <div id="myCatalog" class="d-none position-absolute bg-white p-3 shadow">
                                 <ul class="list-unstyled mb-0">
-                                    <li><a href="#">Persona 5</a></li>
-                                    <li><a href="#">Persona 5 Royal</a></li>
-                                    <li><a href="#">Persona 3</a></li>
-                                    <li><a href="#">Kaguya-sama: Love is War</a></li>
-                                    <li><a href="#">Call of the Night</a></li>
-                                    <li><a href="#">Kobayashi's Dragon Maid</a></li>
-                                    <li><a href="#">Tomo-chan is a Girl</a></li>
-                                    <li><a href="#">Kamikatsu</a></li>
-                                    <li><a href="#">Kimetsu no Yaiba</a></li>
-                                    <li><a href="#">Chainsaw Man</a></li>
+                                    <li class="py-2"><a href="#">Persona 5</a></li>
+                                    <li class="py-2"><a href="#">Persona 5 Royal</a></li>
+                                    <li class="py-2"><a href="#">Persona 3</a></li>
+                                    <li class="py-2"><a href="#">Kaguya-sama: Love is War</a></li>
+                                    <li class="py-2"><a href="#">Call of the Night</a></li>
+                                    <li class="py-2"><a href="#">Kobayashi's Dragon Maid</a></li>
+                                    <li class="py-2"><a href="#">Tomo-chan is a Girl</a></li>
+                                    <li class="py-2"><a href="#">Kamikatsu</a></li>
+                                    <li class="py-2"><a href="#">Kimetsu no Yaiba</a></li>
+                                    <li class="py-2"><a href="#">Chainsaw Man</a></li>
                                 </ul>
                             </div>
                         </li>

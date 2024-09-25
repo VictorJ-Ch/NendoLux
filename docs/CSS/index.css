@@ -147,6 +147,9 @@ html
     background-color: #cbcbcb;
     color: #333;
 }
+.btn.btn-dark{
+    color: #fff !important;
+}
 body
 {
     background-color: #F7F7F7 !important;
@@ -172,6 +175,10 @@ body
 .txtJustify
 {
     text-align: justify;
+}
+.txtWhite
+{
+    color: #FFFF;
 }
 /*Footer*/
 .wrapper {

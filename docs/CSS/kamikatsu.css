@@ -214,6 +214,14 @@ body
 {
     padding-top: 20px;
 }
+.imgFormat
+{
+    text-align: center;
+    vertical-align: center;
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+}
 .txtJustify
 {
     text-align: justify;

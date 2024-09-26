@@ -105,13 +105,11 @@ html
     .navbar-nav .nav-item {
         margin-right: 100px;
     }
-}
-@media (max-width: 992px) {
     .navbar-nav.ms-auto.mb-2.mb-lg-0.align-items-center.d-flex {
         position: relative;
         top: -30px;
     }
-}
+} 
 /*Clicking Options*/
 /*myCatalog*/
 #myCatalog{
@@ -204,15 +202,9 @@ body
     padding: 0;
     box-sizing: border-box;
 }
-.cover {
-    margin-top: 0;
-    width: 100%;
-    position: relative;
-    z-index: 1;
-}
 .padding20
 {
-    padding-top: 20px;
+    padding-bottom: 15px;
 }
 .imgFormat
 {
@@ -225,6 +217,11 @@ body
 .txtJustify
 {
     text-align: justify;
+}
+.nendoDescription
+{
+    padding-left: 25px;
+    padding-right: 25px;
 }
 /*Footer*/
 .wrapper {

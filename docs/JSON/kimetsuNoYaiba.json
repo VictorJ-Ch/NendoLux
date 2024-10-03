@@ -1,0 +1,55 @@
+{
+    "kimetsuNoYaibaProducts":
+    [
+        {
+            "Name": "Giyu",
+            "Image": "../IMG/KimetsuNoYaibaIMG/Giyu.webp",
+            "Ruta": "../HTML/KimetsuNoYaiba.html#Giyu"
+        },
+        {
+            "Name": "Inosuke",
+            "Image": "../IMG/KimetsuNoYaibaIMG/Inosuke.webp",
+            "Ruta": "../HTML/KimetsuNoYaiba.html#Inosuke"
+        },
+        {
+            "Name": "Kyojuro",
+            "Image": "../IMG/KimetsuNoYaibaIMG/Kyoyuro.webp",
+            "Ruta": "../HTML/KimetsuNoYaiba.html#Kiojuro"
+        },
+        {
+            "Name": "Mitsuri",
+            "Image": "../IMG/KimetsuNoYaibaIMG/Mitsuri.webp",
+            "Ruta": "../HTML/KimetsuNoYaiba.html#Mitsuri"
+        },
+        {
+            "Name": "Muzan",
+            "Image": "../IMG/KimetsuNoYaibaIMG/Muzan.webp",
+            "Ruta": "../HTML/KimetsuNoYaiba.html#Muzan"
+        },
+        {
+            "Name": "Nezuko",
+            "Image": "../IMG/KimetsuNoYaibaIMG/Nezuko.webp",
+            "Ruta": "../HTML/KimetsuNoYaiba.html#Nezuko"
+        },
+        {
+            "Name": "Shinobu",
+            "Image": "../IMG/KimetsuNoYaibaIMG/Shinobu.webp",
+            "Ruta": "../HTML/KimetsuNoYaiba.html#Shinobu"
+        },
+        {
+            "Name": "Tanjiro",
+            "Image": "../IMG/KimetsuNoYaibaIMG/Tanjiro.webp",
+            "Ruta": "../HTML/KimetsuNoYaiba.html#Tanjiro"
+        },
+        {
+            "Name": "Tengen",
+            "Image": "../IMG/KimetsuNoYaibaIMG/Tengen.webp",
+            "Ruta": "../HTML/KimetsuNoYaiba.html#Tengen"
+        },
+        {
+            "Name": "Zenitsu",
+            "Image": "../IMG/KimetsuNoYaibaIMG/Zenitsu.webp",
+            "Ruta": "../HTML/KimetsuNoYaiba.html#Zenitsu"
+        }
+    ]
+}

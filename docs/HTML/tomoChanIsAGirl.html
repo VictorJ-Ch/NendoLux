@@ -4,11 +4,13 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!--Info-->
-        <title>NendoLux - Kamikatsu</title>
+        <title>NendoLux - Tomo-Chan is a girl</title>
         <link rel="icon" type="image/png" href="../IMG/NendoLux/NendoLuxLogo.webp">
         <!--Style-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
         <link rel="stylesheet" href="../CSS/kamikatsu.css">
+        <!--Libraries-->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     </head>
     <header>
         <!--NavBar-->
@@ -27,7 +29,7 @@
                                         <div class="container text-center">
                                             <div class="row">
                                                 <div class="col-4">
-                                                    <img src="..." class="img-fluid" alt="KaseemIMG">
+                                                    <img src="../IMG/IndexIMG/UserTemp.webp" class="img-fluid" alt="KaseemIMG">
                                                 </div>
                                                 <div class="col-8">
                                                     <p style="text-align: left;">Kaseem</p>
@@ -59,7 +61,7 @@
                                         <div class="container text-center">
                                             <div class="row">
                                                 <div class="col-4">
-                                                    <img src="..." class="img-fluid" alt="KaseemIMG">
+                                                    <img src="../IMG/IndexIMG/UserTemp.webp" class="img-fluid" alt="KaseemIMG">
                                                 </div>
                                                 <div class="col-8">
                                                     <p style="text-align: left;">Name</p>
@@ -91,7 +93,7 @@
                                         <div class="container text-center">
                                             <div class="row">
                                                 <div class="col-4">
-                                                    <img src="..." class="img-fluid" alt="KaseemIMG">
+                                                    <img src="../IMG/IndexIMG/UserTemp.webp" class="img-fluid" alt="KaseemIMG">
                                                 </div>
                                                 <div class="col-8">
                                                     <p style="text-align: left;">Name</p>
@@ -222,27 +224,8 @@
         </div>
         <!--Productos-->
         <div class="container text-center padding20">
-            <div class="row">
-                <div class="col-6 col-md-3">
-                    <a href="">
-                        <img src="../IMG/KamikatsuIMG/Mitama.webp" class="img-fluid imgFormat" alt="Mitama V1">
-                    </a>
-                </div>
-                <div class="col-6 col-md-3">
-                    <a href="">
-                        <img src="../IMG/KamikatsuIMG/Mitama2.webp" class="img-fluid imgFormat" alt="Mitama V2">
-                    </a>
-                </div>
-                <div class="col-6 col-md-3">
-                    <a href="">
-                        <img src="../IMG/KamikatsuIMG/Mitama3.webp" class="img-fluid imgFormat" alt="Mitama V3">
-                    </a>
-                </div>
-                <div class="col-6 col-md-3">
-                    <a href="">
-                        <img src="../IMG/KamikatsuIMG/Mitama4.webp" class="img-fluid imgFormat" alt="Mitama V4">
-                    </a>
-                </div>
+            <div class="row" id="product-container">
+                
             </div>
         </div>
     </body>
@@ -292,4 +275,5 @@
     <script src="../JS/animation.js"></script>
     <script src="../JS/navbarColor.js"></script>
     <script src="../JS/navbarClick.js"></script>
+    <script src="../JS/loadProducts.js"></script>
 </html>

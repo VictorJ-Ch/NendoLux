@@ -218,6 +218,14 @@ body
     height: 500px;
     object-fit: cover;
 }
+.imgSearch
+{
+    text-align: center;
+    vertical-align: center;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
 .txtJustify
 {
     text-align: justify;

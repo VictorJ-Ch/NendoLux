@@ -3,32 +3,32 @@
     [
         {
             "Name": "Ko",
-            "Image": "../IMG/callOfTheNight/Ko.webp",
+            "Image": "../IMG/CallOfTheNight/Ko.webp",
             "Ruta": "../HTML/callOfTheNight.html#Ko"
         },
         {
             "Name": "Mikazuki",
-            "Image": "../IMG/callOfTheNight/Mikazuki.webp",
+            "Image": "../IMG/CallOfTheNight/Mikazuki.webp",
             "Ruta": "../HTML/callOfTheNight.html#Mikazuki"
         },
         {
             "Name": "Nana",
-            "Image": "../IMG/callOfTheNight/Nana.webp",
+            "Image": "../IMG/CallOfTheNight/Nana.webp",
             "Ruta": "../HTML/callOfTheNight.html#Nana"
         },
         {
             "Name": "Nazuna",
-            "Image": "../IMG/callOfTheNight/Nazuna.webp",
+            "Image": "../IMG/CallOfTheNight/Nazuna.webp",
             "Ruta": "../HTML/callOfTheNight.html#Nazuna"
         },
         {
             "Name": "Rei",
-            "Image": "../IMG/callOfTheNight/Rei.webp",
+            "Image": "../IMG/CallOfTheNight/Rei.webp",
             "Ruta": "../HTML/callOfTheNight.html#Rei"
         },
         {
             "Name": "Sora",
-            "Image": "../IMG/callOfTheNight/Sora.webp",
+            "Image": "../IMG/CallOfTheNight/Sora.webp",
             "Ruta": "../HTML/callOfTheNight.html#Sora"
         }
     ]

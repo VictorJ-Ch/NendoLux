@@ -172,7 +172,7 @@
                             </a>
                             <div id="mySearch" class="d-none position-absolute bg-white p-3 shadow">
                                 <div class="search__container">
-                                    <input class="search__input" type="text" placeholder="Search">
+                                    <input id="search_input" class="search__input" type="text" placeholder="Search">
                                 </div>
                                 <ul class="list-unstyled mb-0">
                                     <br>
@@ -180,6 +180,8 @@
                                     <li class="py-2"><a href="../HTML/kimetsuNoYaiba.html">Línea Exclusiva</a></li>
                                     <li class="py-2"><a href="../HTML/kamikatsu.html">Línea de lanzamiento</a></li>
                                 </ul>
+                                <!-- Contenedor de resultados -->
+                                <div id="search-results" class="mt-3"></div>
                             </div>
                         </li>
                         <!-- Catálogo -->
@@ -216,10 +218,10 @@
         </div>
         <div class="padding20">
             <p style="font-size: 30px; text-align: center;">
-                <strong>Kamikatsu Collection</strong>
+                <strong>Persona 3 Collection</strong>
             </p>
             <p class="txtJustify nendoDescription">
-                Presentamos nuestra nueva colección en colaboración con Kamikatsu, donde traemos a la vida a los personajes icónicos con materiales de la más alta calidad. Nendoroids que combinan diseño excepcional y detalles encantadores, perfectos para destacar en cualquier colección de lujo.
+                Presentamos nuestra exclusiva colección de Nendoroids en colaboración con Persona 3, donde los icónicos personajes del juego se materializan con detalles impresionantes y acabados de la más alta calidad. Estas figuras, que combinan diseño refinado y precisión en cada detalle, son el complemento ideal para cualquier colección de lujo que busque capturar la esencia de este clásico.
             </p>
         </div>
         <!--Productos-->
@@ -277,5 +279,7 @@
     <script src="../JS/animation.js"></script>
     <script src="../JS/navbarColor.js"></script>
     <script src="../JS/navbarClick.js"></script>
+    <script src="../JS/searchBar.js"></script>
     <!--Products Settings-->
+    <script src="../JS/loadPersona3Products.js"></script>
 </html>

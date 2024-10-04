@@ -1,0 +1,50 @@
+{
+    "persona5Products":
+    [
+        {
+            "Name": "Crow",
+            "Image": "./IMG/Persona5/Crow.webp",
+            "Ruta": "./HTML/Persona5.html#Crow"
+        },
+        {
+            "Name": "Fox",
+            "Image": "./IMG/Persona5/Fox.webp",
+            "Ruta": "./HTML/Persona5.html#Fox"
+        },
+        {
+            "Name": "Joker",
+            "Image": "./IMG/Persona5/Joker.webp",
+            "Ruta": "./HTML/Persona5.html#Joker"
+        },
+        {
+            "Name": "Morgana",
+            "Image": "./IMG/Persona5/Morgana.webp",
+            "Ruta": "./HTML/Persona5.html#Morgana"
+        },
+        {
+            "Name": "Noir",
+            "Image": "./IMG/Persona5/Noir.webp",
+            "Ruta": "./HTML/Persona5.html#Noir"
+        },
+        {
+            "Name": "Oracle",
+            "Image": "./IMG/Persona5/Oracle.webp",
+            "Ruta": "./HTML/Persona5.html#Oracle"
+        },
+        {
+            "Name": "Panther",
+            "Image": "./IMG/Persona5/Panther.webp",
+            "Ruta": "./HTML/Persona5.html#Panther"
+        },
+        {
+            "Name": "Queen",
+            "Image": "./IMG/Persona5/Queen.webp",
+            "Ruta": "./HTML/Persona5.html#Queen"
+        },
+        {
+            "Name": "Skull",
+            "Image": "./IMG/Persona5/Skull.webp",
+            "Ruta": "./HTML/Persona5.html#Skull"
+        }
+    ]
+}

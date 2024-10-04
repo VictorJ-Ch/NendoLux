@@ -1,0 +1,50 @@
+{
+    "chainsawManProducts":
+    [
+        {
+            "Name": "Aki",
+            "Image": "../IMG/ChainsawMan/Aki.webp",
+            "Ruta": "../HTML/ChainsawMan.html#Aki"
+        },
+        {
+            "Name": "Denji",
+            "Image": "../IMG/ChainsawMan/Denji.webp",
+            "Ruta": "../HTML/ChainsawMan.html#Denji"
+        },
+        {
+            "Name": "Himeno",
+            "Image": "../IMG/ChainsawMan/Himeno.webp",
+            "Ruta": "../HTML/ChainsawMan.html#Himeno"
+        },
+        {
+            "Name": "Kishibe",
+            "Image": "../IMG/ChainsawMan/Kishibe.webp",
+            "Ruta": "../HTML/ChainsawMan.html#Kishibe"
+        },
+        {
+            "Name": "Kobeni",
+            "Image": "../IMG/ChainsawMan/Kobeni.webp",
+            "Ruta": "../HTML/ChainsawMan.html#Kobeni"
+        },
+        {
+            "Name": "Makima",
+            "Image": "../IMG/ChainsawMan/Makima.webp",
+            "Ruta": "../HTML/ChainsawMan.html#Makima"
+        },
+        {
+            "Name": "Pochita",
+            "Image": "../IMG/ChainsawMan/Pochita.webp",
+            "Ruta": "../HTML/ChainsawMan.html#Pochita"
+        },
+        {
+            "Name": "Power",
+            "Image": "../IMG/ChainsawMan/Power.webp",
+            "Ruta": "../HTML/ChainsawMan.html#Power"
+        },
+        {
+            "Name": "Reze",
+            "Image": "../IMG/ChainsawMan/Reze.webp",
+            "Ruta": "../HTML/ChainsawMan.html#Reze"
+        }
+    ]
+}

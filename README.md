@@ -9,7 +9,7 @@ NendoLux es una empresa de e-commerce especializada en la venta de Nendoroids de
 - Esquema de la aplicación.
 - Diseño de Imagotipo e Isotipo.
 - Diseño de Poster General.
-- Diseño de Poster Kimetsu No Yaiba.
+- Diseño de Poster por Colección.
 - Navbar.
 - Animación del Imagotipo del Navbar.
 - Adaptación a formato Mobile.
@@ -17,7 +17,7 @@ NendoLux es una empresa de e-commerce especializada en la venta de Nendoroids de
 - Mockup Package NendoLux.
 - Términos Legales.
 - Despliegue de la app.
-- Index Search Bar.
-- Search Bar.
+- SearchBar.
 - HTML docs optimization.
 - JSONs.
+- Icons.

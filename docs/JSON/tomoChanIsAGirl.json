@@ -1,0 +1,20 @@
+{
+    "tomoChanIsAGirlProducts":
+    [
+        {
+            "Name": "Tomo1",
+            "Image": "../IMG/TomoChanIsAGirl/Tomo1.webp",
+            "Ruta": "../HTML/TomoChanIsAGirl.html#Tomo1"
+        },
+        {
+            "Name": "Tomo2",
+            "Image": "../IMG/TomoChanIsAGirl/Tomo2.webp",
+            "Ruta": "../HTML/TomoChanIsAGirl.html#Tomo2"
+        },
+        {
+            "Name": "Tomo3",
+            "Image": "../IMG/TomoChanIsAGirl/Tomo3.webp",
+            "Ruta": "../HTML/TomoChanIsAGirl.html#Tomo3"
+        }
+    ]
+}

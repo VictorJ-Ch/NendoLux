@@ -1,0 +1,35 @@
+{
+    "callOfTheNightProducts":
+    [
+        {
+            "Name": "Ko",
+            "Image": "./IMG/callOfTheNight/Ko.webp",
+            "Ruta": "./HTML/callOfTheNight.html#Ko"
+        },
+        {
+            "Name": "Mikazuki",
+            "Image": "./IMG/callOfTheNight/Mikazuki.webp",
+            "Ruta": "./HTML/callOfTheNight.html#Mikazuki"
+        },
+        {
+            "Name": "Nana",
+            "Image": "./IMG/callOfTheNight/Nana.webp",
+            "Ruta": "./HTML/callOfTheNight.html#Nana"
+        },
+        {
+            "Name": "Nazuna",
+            "Image": "./IMG/callOfTheNight/Nazuna.webp",
+            "Ruta": "./HTML/callOfTheNight.html#Nazuna"
+        },
+        {
+            "Name": "Rei",
+            "Image": "./IMG/callOfTheNight/Rei.webp",
+            "Ruta": "./HTML/callOfTheNight.html#Rei"
+        },
+        {
+            "Name": "Sora",
+            "Image": "./IMG/callOfTheNight/Sora.webp",
+            "Ruta": "./HTML/callOfTheNight.html#Sora"
+        }
+    ]
+}

@@ -1,0 +1,50 @@
+{
+    "persona3Products":
+    [
+        {
+            "Name": "Aigis",
+            "Image": "../IMG/Persona3/Aigis.webp",
+            "Ruta": "../HTML/Persona3.html#Aigis"
+        },
+        {
+            "Name": "Akihiko",
+            "Image": "../IMG/Persona3/Akihiko.webp",
+            "Ruta": "../HTML/Persona3.html#Akihiko"
+        },
+        {
+            "Name": "Fuuka",
+            "Image": "../IMG/Persona3/Fuuka.webp",
+            "Ruta": "../HTML/Persona3.html#Fuuka"
+        },
+        {
+            "Name": "Junpei",
+            "Image": "../IMG/Persona3/Junpei.webp",
+            "Ruta": "../HTML/Persona3.html#Junpei"
+        },
+        {
+            "Name": "Koromaru",
+            "Image": "../IMG/Persona3/Koromaru.webp",
+            "Ruta": "../HTML/Persona3.html#Koromaru"
+        },
+        {
+            "Name": "Makoto",
+            "Image": "../IMG/Persona3/Makoto.webp",
+            "Ruta": "../HTML/Persona3.html#Makoto"
+        },
+        {
+            "Name": "Mitsuru",
+            "Image": "../IMG/Persona3/Mitsuru.webp",
+            "Ruta": "../HTML/Persona3.html#Mitsuru"
+        },
+        {
+            "Name": "Shinjiro",
+            "Image": "../IMG/Persona3/Shinjiro.webp",
+            "Ruta": "../HTML/Persona3.html#Shinjiro"
+        },
+        {
+            "Name": "Yukari",
+            "Image": "../IMG/Persona3/Yukari.webp",
+            "Ruta": "../HTML/Persona3.html#Yukari"
+        }
+    ]
+}

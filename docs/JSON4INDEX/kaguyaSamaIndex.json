@@ -1,0 +1,30 @@
+{
+    "kaguyaSamaProducts":
+    [
+        {
+            "Name": "Ai",
+            "Image": "./IMG/KaguyaSama/Ai.webp",
+            "Ruta": "./HTML/KaguyaSama.html#Ai"
+        },
+        {
+            "Name": "Chika",
+            "Image": "./IMG/KaguyaSama/Chika.webp",
+            "Ruta": "./HTML/KaguyaSama.html#Chika"
+        },
+        {
+            "Name": "Kaguya",
+            "Image": "./IMG/KaguyaSama/Kaguya.webp",
+            "Ruta": "./HTML/KaguyaSama.html#Kaguya"
+        },
+        {
+            "Name": "Miyuki",
+            "Image": "./IMG/KaguyaSama/Miyuki.webp",
+            "Ruta": "./HTML/KaguyaSama.html#Miyuki"
+        },
+        {
+            "Name": "Yu",
+            "Image": "./IMG/KaguyaSama/Yu.webp",
+            "Ruta": "./HTML/KaguyaSama.html#Yu"
+        }
+    ]
+}

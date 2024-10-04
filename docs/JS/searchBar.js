@@ -12,13 +12,29 @@ document.addEventListener("DOMContentLoaded", function() {
             // Cargar los JSON
             Promise.all([
                 fetch('../JSON/kamikatsu.json').then(res => res.json()),
-                fetch('../JSON/kimetsuNoYaiba.json').then(res => res.json())
+                fetch('../JSON/kimetsuNoYaiba.json').then(res => res.json()),
+                fetch('../JSON/callOfTheNight.json').then(res => res.json()),
+                fetch('../JSON/chainsawMan.json').then(res => res.json()),
+                fetch('../JSON/kaguyaSama.json').then(res => res.json()),
+                fetch('../JSON/kobayashisDragonMaid.json').then(res => res.json()),
+                fetch('../JSON/persona3.json').then(res => res.json()),
+                fetch('../JSON/persona5.json').then(res => res.json()),
+                fetch('../JSON/persona5Royal.json').then(res => res.json()),
+                fetch('../JSON/tomoChanIsAGirl.json').then(res => res.json())
             ])
-            .then(([kamikatsuData, kimetsuData]) => {
+            .then(([kamikatsuData, kimetsuData, callOfTheNightData, chainsawManData, kaguyaSamaData, kobayashisDragonMaidData, persona3Data, persona5Data, persona5RoyalData, tomoChanIsAGirlData]) => {
                 // Acceder a las listas de productos en los JSON
                 const allProducts = [
                     ...kamikatsuData.kamikatsuProducts, 
-                    ...kimetsuData.kimetsuNoYaibaProducts
+                    ...kimetsuData.kimetsuNoYaibaProducts,
+                    ...callOfTheNightData.callOfTheNightProducts, 
+                    ...chainsawManData.chainsawManProducts, 
+                    ...kaguyaSamaData.kaguyaSamaProducts, 
+                    ...kobayashisDragonMaidData.kobayashisDragonMaidProducts, 
+                    ...persona3Data.persona3Products, 
+                    ...persona5Data.persona5Products, 
+                    ...persona5RoyalData.persona5RoyalProducts, 
+                    ...tomoChanIsAGirlData.tomoChanIsAGirlProducts
                 ];
                 
                 // Filtrar los productos por el texto de búsqueda

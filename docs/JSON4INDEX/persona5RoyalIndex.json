@@ -1,0 +1,45 @@
+{
+    "persona5RoyalProducts":
+    [
+        {
+            "Name": "Crow",
+            "Image": "./IMG/Persona5Royal/Crow.webp",
+            "Ruta": "./HTML/Persona5Royal.html#Crow"
+        },
+        {
+            "Name": "Goro",
+            "Image": "./IMG/Persona5Royal/Goro.webp",
+            "Ruta": "./HTML/Persona5Royal.html#Goro"
+        },
+        {
+            "Name": "Joker",
+            "Image": "./IMG/Persona5Royal/Joker.webp",
+            "Ruta": "./HTML/Persona5Royal.html#Joker"
+        },
+        {
+            "Name": "Kasumi",
+            "Image": "./IMG/Persona5Royal/Kasumi.webp",
+            "Ruta": "./HTML/Persona5Royal.html#Kasumi"
+        },
+        {
+            "Name": "Morgana",
+            "Image": "./IMG/Persona5Royal/Morgana.webp",
+            "Ruta": "./HTML/Persona5Royal.html#Morgana"
+        },
+        {
+            "Name": "Panther",
+            "Image": "./IMG/Persona5Royal/Panther.webp",
+            "Ruta": "./HTML/Persona5Royal.html#Panther"
+        },
+        {
+            "Name": "Queen",
+            "Image": "./IMG/Persona5Royal/Queen.webp",
+            "Ruta": "./HTML/Persona5Royal.html#Queen"
+        },
+        {
+            "Name": "Skull",
+            "Image": "./IMG/Persona5Royal/Skull.webp",
+            "Ruta": "./HTML/Persona5Royal.html#Skull"
+        }
+    ]
+}

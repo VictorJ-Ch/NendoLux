@@ -21,3 +21,5 @@ NendoLux es una empresa de e-commerce especializada en la venta de Nendoroids de
 - HTML docs optimization.
 - JSONs.
 - Icons.
+- Call of the night docs optimization web / mobile.
+- Cart.

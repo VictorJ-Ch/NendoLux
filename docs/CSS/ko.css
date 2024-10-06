@@ -1,0 +1,337 @@
+* {
+    box-sizing: border-box;
+}
+html
+{
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: auto;
+    font-style: normal;
+    padding-top: 10px;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navSpace
+{
+    padding: 5px;
+    text-align: center;
+    vertical-align: center;
+}
+.icono-navbar {
+    width: 24px;
+    height: 24px;
+}
+/* NavBar Animations */
+.navbar {
+    background-color: transparent;
+    height: 50px;
+    transition: background-color 0.5s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: visible;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+.brand-logo {
+    width: 200px;
+    transition: width 0.5s ease; /* Animación de cambio de tamaño */
+    max-height: none;
+    object-fit: contain; 
+    position: absolute;
+    top: 10px;
+}
+.scrolled .brand-logo {
+    padding-top: 15px;
+    width: 50px;
+    top: -10px;
+}
+.scrolled
+{
+    background-color: #B0B0B0;
+    transition: background-color 0.5 ease;
+}
+/*Search Bar*/
+.search__container {
+    padding-top: 10px;
+}
+.search__input {
+    width: 100%;
+    padding: 12px 24px;
+    background-color: transparent;
+    transition: transform 250ms ease-in-out;
+    font-size: 14px;
+    line-height: 18px;
+    color: #575756;
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath d='M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z'/%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-size: 18px 18px;
+    background-position: 95% center;
+    border-radius: 50px;
+    border: 1px solid #575756;
+    transition: all 250ms ease-in-out;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+}
+
+.search__input::placeholder {
+    color: rgba(87, 87, 86, 0.8);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.search__input:hover,
+.search__input:focus {
+    padding: 12px 0;
+    outline: 0;
+    border: 1px solid transparent;
+    border-bottom: 1px solid #575756;
+    border-radius: 0;
+    background-position: 100% center;
+    transform: scale(1.05);
+    transition: transform 250ms ease-in-out;
+}
+/*ICONS*/
+.socialIcons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+.socialIcons a {
+    display: inline-block;
+}
+/*MOBILE*/
+@media (max-width: 992px) {
+    .navbar-nav .nav-item {
+        margin-right: 100px;
+    }
+    .navbar-nav.ms-auto.mb-2.mb-lg-0.align-items-center.d-flex {
+        position: relative;
+        top: -30px;
+    }
+} 
+/*Clicking Options*/
+/*myCatalog*/
+#myCatalog{
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    min-width: 300px;
+}
+#myCatalog a {
+    display: block;
+    padding: 5px 10px;
+    color: #000;
+}
+#myCatalog a:hover {
+    background-color: #cbcbcb;
+    color: #333;
+}
+/*mySearch*/
+#mySearch{
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    min-width: 300px;
+}
+#mySearch a {
+    display: block;
+    padding: 5px 10px;
+    color: #000;
+}
+#mySearch a:hover {
+    background-color: #cbcbcb;
+    color: #333;
+}
+/*myUser*/
+#myUser{
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    min-width: 300px;
+}
+#myUser a {
+    display: block;
+    padding: 5px 10px;
+    color: #000;
+}
+#myUser a:hover {
+    background-color: #cbcbcb;
+    color: #333;
+}
+/*myBag*/
+#myBolsa{
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    min-width: 300px;
+}
+#myBolsa a {
+    display: block;
+    padding: 5px 10px;
+    color: #000;
+}
+#myBolsa a:hover {
+    background-color: #cbcbcb;
+    color: #333;
+}
+/*myContactanos*/
+#myContactanos{
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    min-width: 400px;
+}
+#myContactanos a {
+    display: block;
+    padding: 5px 10px;
+    color: #000;
+}
+#myContactanos a:hover {
+    background-color: #cbcbcb;
+    color: #333;
+}
+.btn.btn-dark{
+    color: #fff !important;
+}
+body
+{
+    background-color: #979797 !important;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.box
+{
+    border-radius: 15px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+    background: rgba(255, 255, 255, 0.15); 
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2); 
+    background-clip: padding-box;
+    display: inline-block;
+    max-height: 300px;
+    overflow: hidden;
+    padding: 5px 10px;
+}
+.product-description {
+    margin-top: 40px;
+    width: 100%;
+    text-align: center;
+}
+.position-relative {
+    position: relative;
+}
+
+.overlay-description {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+img.cove {
+    width: 100%; /* O ajustá según el tamaño deseado */
+}
+
+.full-width {
+    width: 100%;
+    height: 100vh; /* Ajustá el alto como prefieras */
+    object-fit: cover;
+}
+.description-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 1;
+}
+.padding20
+{
+    padding-bottom: 15px;
+}
+.miniPadding img
+{
+    margin-bottom: 15px;
+}
+.imgFormat {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.imgSearch
+{
+    text-align: center;
+    vertical-align: center;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+.txtJustify
+{
+    text-align: justify;
+}
+.nendoDescription
+{
+    padding-left: 25px;
+    padding-right: 25px;
+}
+/*MOBILE*/
+.mobile-img {
+    display: none; /* Ocultar por defecto */
+}
+
+/* En dispositivos móviles */
+@media (max-width: 992px) {
+    .mobile-img {
+        display: block;
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+
+    .mobile-img img {
+       overflow: hidden;
+    }
+
+    .description-overlay {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+    }
+
+    .product-description {
+        margin-top: 10px;
+        width: 100%;
+        text-align: center;
+    }
+}
+/*Footer*/
+.wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.content {
+    flex: 1;
+}
+footer {
+    background-color: #000;
+    color: #FFFF;
+    width: 100vw;
+    padding: 10px 0;
+    position: relative;
+}

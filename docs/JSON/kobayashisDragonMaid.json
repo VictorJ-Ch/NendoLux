@@ -4,27 +4,27 @@
         {
             "Name": "Elma",
             "Image": "../IMG/KobayashisDragonMaid/Elma.webp",
-            "Ruta": "../HTML/KobayashisDragonMaid.html#Elma"
+            "Ruta": "../KobayashisDragonMaid/elma.html"
         },
         {
             "Name": "Ilulu",
             "Image": "../IMG/KobayashisDragonMaid/Ilulu.webp",
-            "Ruta": "../HTML/KobayashisDragonMaid.html#Ilulu"
+            "Ruta": "../KobayashisDragonMaid/ilulu.html"
         },
         {
             "Name": "Kanna",
             "Image": "../IMG/KobayashisDragonMaid/Kanna.webp",
-            "Ruta": "../HTML/KobayashisDragonMaid.html#Kanna"
+            "Ruta": "../KobayashisDragonMaid/kanna.html"
         },
         {
             "Name": "Kobayashi",
             "Image": "../IMG/KobayashisDragonMaid/Kobayashi.webp",
-            "Ruta": "../HTML/KobayashisDragonMaid.html#Kobayashi"
+            "Ruta": "../KobayashisDragonMaid/kobayashi.html"
         },
         {
             "Name": "Tohru",
             "Image": "../IMG/KobayashisDragonMaid/Tohru.webp",
-            "Ruta": "../HTML/KobayashisDragonMaid.html#Tohru"
+            "Ruta": "../KobayashisDragonMaid/tohru.html"
         }
     ]
 }

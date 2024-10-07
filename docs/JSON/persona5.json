@@ -4,47 +4,47 @@
         {
             "Name": "Crow",
             "Image": "../IMG/Persona5/Crow.webp",
-            "Ruta": "../HTML/Persona5.html#Crow"
+            "Ruta": "../Persona5/crow.html"
         },
         {
             "Name": "Fox",
             "Image": "../IMG/Persona5/Fox.webp",
-            "Ruta": "../HTML/Persona5.html#Fox"
+            "Ruta": "../Persona5/fox.html"
         },
         {
             "Name": "Joker",
             "Image": "../IMG/Persona5/Joker.webp",
-            "Ruta": "../HTML/Persona5.html#Joker"
+            "Ruta": "../Persona5/joker.html"
         },
         {
             "Name": "Morgana",
             "Image": "../IMG/Persona5/Morgana.webp",
-            "Ruta": "../HTML/Persona5.html#Morgana"
+            "Ruta": "../Persona5/morgana.html"
         },
         {
             "Name": "Noir",
             "Image": "../IMG/Persona5/Noir.webp",
-            "Ruta": "../HTML/Persona5.html#Noir"
+            "Ruta": "../Persona5/noir.html"
         },
         {
             "Name": "Oracle",
             "Image": "../IMG/Persona5/Oracle.webp",
-            "Ruta": "../HTML/Persona5.html#Oracle"
+            "Ruta": "../Persona5/oracle.html"
         },
         {
             "Name": "Panther",
             "Image": "../IMG/Persona5/Panther.webp",
-            "Ruta": "../HTML/Persona5.html#Panther"
+            "Ruta": "../Persona5/panther.html"
         },
         {
             "Name": "Queen",
             "Image": "../IMG/Persona5/Queen.webp",
-            "Ruta": "../HTML/Persona5.html#Queen"
+            "Ruta": "../Persona5/queen.html"
         },
         {
             "Name": "Skull",
             "Image": "../IMG/Persona5/Skull.webp",
-            "Ruta": "../HTML/Persona5.html#Skull"
+            "Ruta": "../Persona5/skull.html"
         }
     ]
 }

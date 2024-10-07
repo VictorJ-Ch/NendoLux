@@ -4,47 +4,47 @@
         {
             "Name": "Aigis",
             "Image": "../IMG/Persona3/Aigis.webp",
-            "Ruta": "../HTML/Persona3.html#Aigis"
+            "Ruta": "../Persona3/aigis.html"
         },
         {
             "Name": "Akihiko",
             "Image": "../IMG/Persona3/Akihiko.webp",
-            "Ruta": "../HTML/Persona3.html#Akihiko"
+            "Ruta": "../Persona3/akihiko.html"
         },
         {
             "Name": "Fuuka",
             "Image": "../IMG/Persona3/Fuuka.webp",
-            "Ruta": "../HTML/Persona3.html#Fuuka"
+            "Ruta": "../Persona3/fuuka.html"
         },
         {
             "Name": "Junpei",
             "Image": "../IMG/Persona3/Junpei.webp",
-            "Ruta": "../HTML/Persona3.html#Junpei"
+            "Ruta": "../Persona3/junpei.html"
         },
         {
             "Name": "Koromaru",
             "Image": "../IMG/Persona3/Koromaru.webp",
-            "Ruta": "../HTML/Persona3.html#Koromaru"
+            "Ruta": "../Persona3/koromaru.html"
         },
         {
             "Name": "Makoto",
             "Image": "../IMG/Persona3/Makoto.webp",
-            "Ruta": "../HTML/Persona3.html#Makoto"
+            "Ruta": "../Persona3/makoto.html"
         },
         {
             "Name": "Mitsuru",
             "Image": "../IMG/Persona3/Mitsuru.webp",
-            "Ruta": "../HTML/Persona3.html#Mitsuru"
+            "Ruta": "../Persona3/mitsuru.html"
         },
         {
             "Name": "Shinjiro",
             "Image": "../IMG/Persona3/Shinjiro.webp",
-            "Ruta": "../HTML/Persona3.html#Shinjiro"
+            "Ruta": "../Persona3/shinjiro.html"
         },
         {
             "Name": "Yukari",
             "Image": "../IMG/Persona3/Yukari.webp",
-            "Ruta": "../HTML/Persona3.html#Yukari"
+            "Ruta": "../Persona3/yukari.html"
         }
     ]
 }

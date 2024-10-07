@@ -4,52 +4,52 @@
         {
             "Name": "Giyu",
             "Image": "./IMG/KimetsuNoYaibaIMG/Giyu.webp",
-            "Ruta": "./HTML/KimetsuNoYaiba.html#Giyu"
+            "Ruta": "./KimetsuNoYaiba/giyu.html"
         },
         {
             "Name": "Inosuke",
             "Image": "./IMG/KimetsuNoYaibaIMG/Inosuke.webp",
-            "Ruta": "./HTML/KimetsuNoYaiba.html#Inosuke"
+            "Ruta": "./KimetsuNoYaiba/inosuke.html"
         },
         {
             "Name": "Kyojuro",
             "Image": "./IMG/KimetsuNoYaibaIMG/Kyojuro.webp",
-            "Ruta": "./HTML/KimetsuNoYaiba.html#Kyojuro"
+            "Ruta": "./KimetsuNoYaiba/kyojuro.html"
         },
         {
             "Name": "Mitsuri",
             "Image": "./IMG/KimetsuNoYaibaIMG/Mitsuri.webp",
-            "Ruta": "./HTML/KimetsuNoYaiba.html#Mitsuri"
+            "Ruta": "./KimetsuNoYaiba/mitsuri.html"
         },
         {
             "Name": "Muzan",
             "Image": "./IMG/KimetsuNoYaibaIMG/Muzan.webp",
-            "Ruta": "./HTML/KimetsuNoYaiba.html#Muzan"
+            "Ruta": "./KimetsuNoYaiba/muzan.html"
         },
         {
             "Name": "Nezuko",
             "Image": "./IMG/KimetsuNoYaibaIMG/Nezuko.webp",
-            "Ruta": "./HTML/KimetsuNoYaiba.html#Nezuko"
+            "Ruta": "./KimetsuNoYaiba/nezuko.html"
         },
         {
             "Name": "Shinobu",
             "Image": "./IMG/KimetsuNoYaibaIMG/Shinobu.webp",
-            "Ruta": "./HTML/KimetsuNoYaiba.html#Shinobu"
+            "Ruta": "./KimetsuNoYaiba/shinobu.html"
         },
         {
             "Name": "Tanjiro",
             "Image": "./IMG/KimetsuNoYaibaIMG/Tanjiro.webp",
-            "Ruta": "./HTML/KimetsuNoYaiba.html#Tanjiro"
+            "Ruta": "./KimetsuNoYaiba/tanjiro.html"
         },
         {
             "Name": "Tengen",
             "Image": "./IMG/KimetsuNoYaibaIMG/Tengen.webp",
-            "Ruta": "./HTML/KimetsuNoYaiba.html#Tengen"
+            "Ruta": "./KimetsuNoYaiba/tengen.html"
         },
         {
             "Name": "Zenitsu",
             "Image": "./IMG/KimetsuNoYaibaIMG/Zenitsu.webp",
-            "Ruta": "./HTML/KimetsuNoYaiba.html#Zenitsu"
+            "Ruta": "./KimetsuNoYaiba/zenitsu.html"
         }
     ]
 }

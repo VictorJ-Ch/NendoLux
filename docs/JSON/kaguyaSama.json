@@ -4,27 +4,27 @@
         {
             "Name": "Ai",
             "Image": "../IMG/KaguyaSama/Ai.webp",
-            "Ruta": "../HTML/KaguyaSama.html#Ai"
+            "Ruta": "../KaguyaSama/ai.html"
         },
         {
             "Name": "Chika",
             "Image": "../IMG/KaguyaSama/Chika.webp",
-            "Ruta": "../HTML/KaguyaSama.html#Chika"
+            "Ruta": "../KaguyaSama/chika.html"
         },
         {
             "Name": "Kaguya",
             "Image": "../IMG/KaguyaSama/Kaguya.webp",
-            "Ruta": "../HTML/KaguyaSama.html#Kaguya"
+            "Ruta": "../KaguyaSama/kaguya.html"
         },
         {
             "Name": "Miyuki",
             "Image": "../IMG/KaguyaSama/Miyuki.webp",
-            "Ruta": "../HTML/KaguyaSama.html#Miyuki"
+            "Ruta": "../KaguyaSama/miyuki.html"
         },
         {
             "Name": "Yu",
             "Image": "../IMG/KaguyaSama/Yu.webp",
-            "Ruta": "../HTML/KaguyaSama.html#Yu"
+            "Ruta": "../KaguyaSama/yu.html"
         }
     ]
 }

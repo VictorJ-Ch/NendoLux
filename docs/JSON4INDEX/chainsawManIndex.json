@@ -4,47 +4,47 @@
         {
             "Name": "Aki",
             "Image": "./IMG/ChainsawMan/Aki.webp",
-            "Ruta": "./HTML/ChainsawMan.html#Aki"
+            "Ruta": "./ChainsawMan/aki.html"
         },
         {
             "Name": "Denji",
             "Image": "./IMG/ChainsawMan/Denji.webp",
-            "Ruta": "./HTML/ChainsawMan.html#Denji"
+            "Ruta": "./ChainsawMan/denji.html"
         },
         {
             "Name": "Himeno",
             "Image": "./IMG/ChainsawMan/Himeno.webp",
-            "Ruta": "./HTML/ChainsawMan.html#Himeno"
+            "Ruta": "./ChainsawMan/himeno.html"
         },
         {
             "Name": "Kishibe",
             "Image": "./IMG/ChainsawMan/Kishibe.webp",
-            "Ruta": "./HTML/ChainsawMan.html#Kishibe"
+            "Ruta": "./ChainsawMan/kishibe.html"
         },
         {
             "Name": "Kobeni",
             "Image": "./IMG/ChainsawMan/Kobeni.webp",
-            "Ruta": "./HTML/ChainsawMan.html#Kobeni"
+            "Ruta": "./ChainsawMan/kobeni.html"
         },
         {
             "Name": "Makima",
             "Image": "./IMG/ChainsawMan/Makima.webp",
-            "Ruta": "./HTML/ChainsawMan.html#Makima"
+            "Ruta": "./ChainsawMan/makima.html"
         },
         {
             "Name": "Pochita",
             "Image": "./IMG/ChainsawMan/Pochita.webp",
-            "Ruta": "./HTML/ChainsawMan.html#Pochita"
+            "Ruta": "./ChainsawMan/pochita.html"
         },
         {
             "Name": "Power",
             "Image": "./IMG/ChainsawMan/Power.webp",
-            "Ruta": "./HTML/ChainsawMan.html#Power"
+            "Ruta": "./ChainsawMan/power.html"
         },
         {
             "Name": "Reze",
             "Image": "./IMG/ChainsawMan/Reze.webp",
-            "Ruta": "./HTML/ChainsawMan.html#Reze"
+            "Ruta": "./ChainsawMan/reze.html"
         }
     ]
 }

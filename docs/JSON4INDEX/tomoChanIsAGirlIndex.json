@@ -2,19 +2,19 @@
     "tomoChanIsAGirlProducts":
     [
         {
-            "Name": "Tomo1",
+            "Name": "Tomo 1",
             "Image": "./IMG/TomoChanIsAGirl/Tomo1.webp",
-            "Ruta": "./HTML/TomoChanIsAGirl.html#Tomo1"
+            "Ruta": "./TomoChanIsAGirl/tomo1.html"
         },
         {
-            "Name": "Tomo2",
+            "Name": "Tomo 2",
             "Image": "./IMG/TomoChanIsAGirl/Tomo2.webp",
-            "Ruta": "./HTML/TomoChanIsAGirl.html#Tomo2"
+            "Ruta": "./TomoChanIsAGirl/tomo2.html"
         },
         {
-            "Name": "Tomo3",
+            "Name": "Tomo 3",
             "Image": "./IMG/TomoChanIsAGirl/Tomo3.webp",
-            "Ruta": "./HTML/TomoChanIsAGirl.html#Tomo3"
+            "Ruta": "./TomoChanIsAGirl/tomo3.html"
         }
     ]
 }

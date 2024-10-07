@@ -4,22 +4,22 @@
         {
             "Name": "Mitama 1",
             "Image": "./IMG/KamikatsuIMG/Mitama.webp",
-            "Ruta": "./HTML/kamikatsu.html#Mitama1"
+            "Ruta": "./Kamikatsu/mitama1.html"
         },
         {
             "Name": "Mitama 2",
             "Image": "./IMG/KamikatsuIMG/Mitama2.webp",
-            "Ruta": "./HTML/kamikatsu.html#Mitama2"
+            "Ruta": "./Kamikatsu/mitama2.html"
         },
         {
             "Name": "Mitama 3",
             "Image": "./IMG/KamikatsuIMG/Mitama3.webp",
-            "Ruta": "./HTML/kamikatsu.html#Mitama3"
+            "Ruta": "./Kamikatsu/mitama3.html"
         },
         {
             "Name": "Mitama 4",
             "Image": "./IMG/KamikatsuIMG/Mitama4.webp",
-            "Ruta": "./HTML/kamikatsu.html#Mitama4"
+            "Ruta": "./Kamikatsu/mitama4.html"
         }
     ]
 }

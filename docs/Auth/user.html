@@ -4,12 +4,12 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!--Info-->
-        <title>NendoLux</title>
-        <link rel="icon" type="image/png" href="./IMG/NendoLux/NendoLuxLogo.webp">
+        <title>NendoLux - Log In</title>
+        <link rel="icon" type="image/png" href="../IMG/NendoLux/NendoLuxLogo.webp">
         <!--Style-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-        <link rel="stylesheet" href="./CSS/index.css">
-        <!--libraries-->
+        <link rel="stylesheet" href="../CSS/account.css">
+        <!--Libraries-->
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     </head>
     <header>
@@ -29,7 +29,7 @@
                                         <div class="container text-center">
                                             <div class="row">
                                                 <div class="col-4">
-                                                    <img src="./IMG/IndexIMG/UserTemp.webp" class="img-fluid" alt="KaseemIMG">
+                                                    <img src="../IMG/IndexIMG/UserTemp.webp" class="img-fluid" alt="KaseemIMG">
                                                 </div>
                                                 <div class="col-8">
                                                     <p style="text-align: left;">Kaseem</p>
@@ -61,7 +61,7 @@
                                         <div class="container text-center">
                                             <div class="row">
                                                 <div class="col-4">
-                                                    <img src="./IMG/IndexIMG/UserTemp.webp" class="img-fluid" alt="KaseemIMG">
+                                                    <img src="../IMG/IndexIMG/UserTemp.webp" class="img-fluid" alt="KaseemIMG">
                                                 </div>
                                                 <div class="col-8">
                                                     <p style="text-align: left;">Name</p>
@@ -93,7 +93,7 @@
                                         <div class="container text-center">
                                             <div class="row">
                                                 <div class="col-4">
-                                                    <img src="./IMG/IndexIMG/UserTemp.webp" class="img-fluid" alt="KaseemIMG">
+                                                    <img src="../IMG/IndexIMG/UserTemp.webp" class="img-fluid" alt="KaseemIMG">
                                                 </div>
                                                 <div class="col-8">
                                                     <p style="text-align: left;">Name</p>
@@ -128,8 +128,8 @@
                     <!-- Imagotipo-->
                     <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="./index.html">
-                                <img src="./IMG/NendoLux/NendoLuxLogo.webp" alt="NendoLuxImagotipo" id="brand-logo" class="brand-logo">
+                            <a class="nav-link active" aria-current="page" href="../index.html">
+                                <img src="../IMG/NendoLux/NendoLuxLogo.webp" alt="NendoLuxImagotipo" id="brand-logo" class="brand-logo">
                             </a>
                         </li>
                     </ul>
@@ -138,13 +138,15 @@
                         <!-- Bolsa -->
                         <li class="nav-item me-2 position-relative">
                             <a class="nav-link active" aria-current="page" href="#" id="bolsa-icon">
-                                <img src="./IMG/Icons/BagIcon.webp" alt="Bolsa" class="icono-navbar">
+                                <img src="../IMG/Icons/BagIcon.webp" alt="Bolsa" class="icono-navbar">
                             </a>
                             <div id="myBolsa" class="d-none position-absolute bg-white p-3 shadow">
-                                <ul class="list-unstyled mb-0">
+                                <ul class="list-unstyled mb-0" id="cart-items">
                                     <p style="font-size: 20px; text-decoration: none;">Agregado a la bolsa de compras</p>
                                     <hr>
-                                    <p> Nada aún</p>
+                                    <div id="cart-empty">
+                                        <p>Nada aún</p>
+                                    </div>
                                     <hr>
                                     <a href="#" class="btn btn-outline-secondary">Finalizar compra</a>
                                     <p></p>
@@ -155,20 +157,20 @@
                         <!-- User -->
                         <li class="nav-item me-2 position-relative">
                             <a class="nav-link active" aria-current="page" href="#" id="user-icon">
-                                <img src="./IMG/Icons/UserIcon.webp" alt="User" class="icono-navbar">
+                                <img src="../IMG/Icons/UserIcon.webp" alt="User" class="icono-navbar">
                             </a>
                             <div id="myUser" class="d-none position-absolute bg-white p-3 shadow">
                                 <ul class="list-unstyled mb-0">
                                     <p style="font-size: 20px; text-decoration: none;">Su cuenta</p>
                                     <hr>
-                                    <li class="py-2"><a href="./Auth/logIn.html">Iniciar sesión</a></li>
+                                    <li class="py-2"><a href="../index.html">cerrar sesión</a></li>
                                 </ul>
                             </div>
                         </li>
                         <!-- Buscar -->
                         <li class="nav-item me-2 position-relative">
                             <a class="nav-link active" aria-current="page" href="#" id="search-icon">
-                                <img src="./IMG/Icons/SearchIcon.webp" alt="Buscar" class="icono-navbar">
+                                <img src="../IMG/Icons/SearchIcon.webp" alt="Buscar" class="icono-navbar">
                             </a>
                             <div id="mySearch" class="d-none position-absolute bg-white p-3 shadow">
                                 <div class="search__container">
@@ -177,8 +179,8 @@
                                 <ul class="list-unstyled mb-0">
                                     <br>
                                     <p style="font-size: 20px;">También pude buscar</p>
-                                    <li class="py-2"><a href="./HTML/kimetsuNoYaiba.html">Línea Exclusiva</a></li>
-                                    <li class="py-2"><a href="./HTML/kamikatsu.html">Línea de lanzamiento</a></li>
+                                    <li class="py-2"><a href="../HTML/kimetsuNoYaiba.html">Línea Exclusiva</a></li>
+                                    <li class="py-2"><a href="../HTML/kamikatsu.html">Línea de lanzamiento</a></li>
                                 </ul>
                                 <!-- Contenedor de resultados -->
                                 <div id="search-results" class="mt-3"></div>
@@ -187,22 +189,22 @@
                         <!-- Catálogo -->
                         <li class="nav-item me-2 position-relative">
                             <a class="nav-link active" aria-current="page" href="#" id="catalogo-icon">
-                                <img src="./IMG/Icons/MoreIcon.webp" alt="Catálogo" class="icono-navbar">
+                                <img src="../IMG/Icons/MoreIcon.webp" alt="Catálogo" class="icono-navbar">
                             </a>
                             <div id="myCatalog" class="d-none position-absolute bg-white p-3 shadow">
                                 <ul class="list-unstyled mb-0">
-                                    <li class="py-2"><a href="./HTML/persona5.html" style="font-size: 20px; text-decoration: none;">Persona 5</a></li>
-                                    <li class="py-2"><a href="./HTML/persona5.html" style="font-size: 20px; text-decoration: none;">Persona 5 Royal</a></li>
-                                    <li class="py-2"><a href="./HTML/persona5Royal.html" style="font-size: 20px; text-decoration: none;">Persona 3</a></li>
-                                    <li class="py-2"><a href="./HTML/kaguyaSama.html" style="font-size: 20px; text-decoration: none;">Kaguya-sama: Love is War</a></li>
-                                    <li class="py-2"><a href="./HTML/callOfTheNight.html" style="font-size: 20px; text-decoration: none;">Call of the Night</a></li>
-                                    <li class="py-2"><a href="./HTML/kobayashisDragonMaid.html" style="font-size: 20px; text-decoration: none;">Kobayashi's Dragon Maid</a></li>
-                                    <li class="py-2"><a href="./HTML/tomoChanIsAGirl.html" style="font-size: 20px; text-decoration: none;">Tomo-chan is a Girl</a></li>
-                                    <li class="py-2"><a href="./HTML/kamikatsu.html" style="font-size: 20px; text-decoration: none;">Kamikatsu</a></li>
-                                    <li class="py-2"><a href="./HTML/kimetsuNoYaiba.html" style="font-size: 20px; text-decoration: none;">Kimetsu no Yaiba</a></li>
-                                    <li class="py-2"><a href="./HTML/chainsawMan.html" style="font-size: 20px; text-decoration: none;">Chainsaw Man</a></li>
+                                    <li class="py-2"><a href="../HTML/persona5.html" style="font-size: 20px; text-decoration: none;">Persona 5</a></li>
+                                    <li class="py-2"><a href="../HTML/persona5Royal.html" style="font-size: 20px; text-decoration: none;">Persona 5 Royal</a></li>
+                                    <li class="py-2"><a href="../HTML/persona3.html" style="font-size: 20px; text-decoration: none;">Persona 3</a></li>
+                                    <li class="py-2"><a href="../HTML/kaguyaSama.html" style="font-size: 20px; text-decoration: none;">Kaguya-sama: Love is War</a></li>
+                                    <li class="py-2"><a href="../HTML/callOfTheNight.html" style="font-size: 20px; text-decoration: none;">Call of the Night</a></li>
+                                    <li class="py-2"><a href="../HTML/kobayashisDragonMaid.html" style="font-size: 20px; text-decoration: none;">Kobayashi's Dragon Maid</a></li>
+                                    <li class="py-2"><a href="../HTML/tomoChanIsAGirl.html" style="font-size: 20px; text-decoration: none;">Tomo-chan is a Girl</a></li>
+                                    <li class="py-2"><a href="./kamikatsu.html" style="font-size: 20px; text-decoration: none;">Kamikatsu</a></li>
+                                    <li class="py-2"><a href="./kimetsuNoYaiba.html" style="font-size: 20px; text-decoration: none;">Kimetsu no Yaiba</a></li>
+                                    <li class="py-2"><a href="../HTML/chainsawMan.html" style="font-size: 20px; text-decoration: none;">Chainsaw Man</a></li>
                                     <br>
-                                    <li class="py-2"><a href="./Auth/logIn.html">Iniciar Sesión</a></li>
+                                    <li class="py-2"><a href="../index.html">Cerrar Sesión</a></li>
                                 </ul>
                             </div>
                         </li>
@@ -214,49 +216,10 @@
     <body>
         <!--Portada-->
         <div>
-            <img src="./IMG/IndexIMG/NendoroidsImgGeneral.webp" class="img-fluid cover" alt="Portada">
+            <img src="../IMG/IndexIMG/NendoroidsImgGeneral.webp" class="img-fluid cover" alt="Portada">
         </div>
-        <!-- Sections Promo -->
-        <div class="text-center padding20" style="font-size: 30px;">
-            <p><strong>Colecciones NendoLux</strong></p>
-        </div>
-        <div class="container text-center padding20">
-            <div class="row">
-                <div class="col-12 col-md-6">
-                    <a style="text-decoration: none; color:black;" href="./HTML/kimetsuNoYaiba.html">
-                        <img src="./IMG/KimetsuNoYaibaIMG/KimetsuNoYaibaCover.webp" class="img-fluid" alt="Línea Popular">
-                    <p class="text-center padding20" style="font-size: 20px;">Kimetsu No Yaiba</p>
-                    </a>
-                </div>
-                <div class="col-12 col-md-6">
-                    <a style="text-decoration: none; color: black;" href="./HTML/kamikatsu.html">
-                        <img href="./HTML/kamikatsu.html" src="./IMG/KamikatsuIMG/KamikatsuCover.webp" class="img-fluid" alt="Línea Reciente">
-                        <p class="text-center padding20" style="font-size: 20px;">Kamikatsu: Working for God in a Godless World</p>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <!--Servicios-->
-        <div class="padding20 text-center">
-            <p><strong style="font-size: 30px;">
-                Servicios
-            </strong></p>
-        </div>
-        <div class="container text-center">
-            <div class="row">
-                <div class="col-12 col-md-8 order-0 order-md-0">
-                    <img src="./IMG/PackageIMG/NendoLuxPackage.webp" class="img-fluid" alt="Packaging">
-                </div>
-                <div class="col-12 col-md-4 order-1 order-md-1">
-                    <p><strong class="padding20" style="font-size: 20px;">Embalaje</strong></p>
-                    <p class="txtJustify">
-                        En NendoLux, nos comprometemos a ofrecer un embalaje cuidadoso y de la más alta calidad para asegurar que cada uno de nuestros productos llegue a nuestros clientes en perfectas condiciones. Utilizamos materiales premium y técnicas avanzadas para proteger cada artículo, reflejando nuestro compromiso con la excelencia en cada detalle.
-                    </p>
-                    <p class="txtJustify">
-                        Nuestro embalaje no solo garantiza la seguridad durante el transporte, sino que también enriquece la experiencia de nuestros clientes al recibir sus compras de manera impecable. En NendoLux, calidad y presentación van de la mano.
-                    </p>
-                </div>
-            </div>
+        <div class="text-center" style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh;">
+            <p style="font-size: 30px; text-align: center;">Bienvenido / a $user.name</p>
         </div>
     </body>
     <footer>
@@ -291,24 +254,23 @@
                         A pesar de que NendoLux es un comercio simulado, los productos presentados en la plataforma existen y están disponibles en el mercado.
                     </p>
                     <br>
-                    <img src="./IMG/NendoLux/NendoLuxLogoWhite.webp" class="img-fluid" alt="NendoLuxImagotipoWhite">
+                    <img src="../IMG/NendoLux/NendoLuxLogoWhite.webp" class="img-fluid" alt="NendoLuxImagotipoWhite">
                 </div>
             </div>
             <div class="row justify-content-center">
                 <div class="col-12 d-flex justify-content-center">
-                    <img src="./IMG/NendoLux/NendoLuxIsoBlack.webp" class="img-fluid" alt="NenoLux Isotipo">
+                    <img src="../IMG/NendoLux/NendoLuxIsoBlack.webp" class="img-fluid" alt="NenoLux Isotipo">
                 </div>
             </div>
-            <!--Temp Test-->
-            <div>
-                <a href="./Auth/logIn.html" class="btn btn-link">Log In View</a>
-            </div>
+        </div>
     </footer>
     <!--Bootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <!--Navbar-->
-    <script src="./JS/animation.js"></script>
-    <script src="./JS/navbarColor.js"></script>
-    <script src="./JS/navbarClick.js"></script>
-    <script src="./JS/searchBarIndex.js"></script>
+    <!--NavbarConfiguration-->
+    <script src="../JS/animation.js"></script>
+    <script src="../JS/navbarColor.js"></script>
+    <script src="../JS/navbarClick.js"></script>
+    <script src="../JS/searchBar.js"></script>
+    <!--Cart-->
+    <script src="../JS/cart.js"></script>
 </html>

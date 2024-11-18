@@ -1,22 +1,24 @@
 # NendoLux
-[NendoLux Online](https://victorj-ch.github.io/NendoLux/)
+[NendoLux GitHubPages deploy](https://victorj-ch.github.io/NendoLux/)
+
+[NendoLux Firebase deploy](https://nendolux.web.app/)
 ## Acerca de NendoLux
 NendoLux es una empresa de e-commerce especializada en la venta de Nendoroids de lujo, ofreciendo figuras de alta calidad para coleccionistas y fanáticos. Su enfoque está en brindar una experiencia premium, tanto en productos como en servicio al cliente.
  
 ## Actividades de los implicados
-### Víctor Chavarría "Kaseem"
-- Diseño de aplicación.
-- Esquema de la aplicación.
-- Diseño de Imagotipo e Isotipo.
-- Diseño de Poster General.
-- Diseño de Poster por Colección.
+### Víctor "Kaseem" Chavarría
+- App Design.
+- App Scheme.
+- Imagotype and Isotype Design.
+- General Poster Design.
+- Collection Poster Design.
 - Navbar.
-- Animación del Imagotipo del Navbar.
-- Adaptación a formato Mobile.
-- Adaptación a formato web.
+- Navbar Imagotype Animation.
+- Mobile Format Adaptation.
+- Web Format Adaptation.
 - Mockup Package NendoLux.
-- Términos Legales.
-- Despliegue de la app.
+- Legal Terms.
+- GitHub Pages app deployment.
 - SearchBar.
 - HTML docs optimization.
 - JSONs.
@@ -32,3 +34,6 @@ NendoLux es una empresa de e-commerce especializada en la venta de Nendoroids de
 - Persona 5 Royal docs optimization web / mobile.
 - Tomo Chan Is A Girl docs optimization web / mobile.
 - Cart.
+- Auth Views.
+- Cart Views.
+- Firebase app deployment.

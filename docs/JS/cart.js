@@ -59,7 +59,7 @@ function updateCartDisplay() {
     finalizaCompraButton.innerText = 'Finalizar compra';
 
     const verBolsaButton = document.createElement('a');
-    verBolsaButton.href = '#';
+    verBolsaButton.href = '../Cart/cart.html';
     verBolsaButton.classList.add('btn', 'btn-dark');
     verBolsaButton.innerText = 'Ver bolsa de compras';
 

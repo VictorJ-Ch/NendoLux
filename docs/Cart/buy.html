@@ -4,12 +4,12 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!--Info-->
-        <title>NendoLux</title>
-        <link rel="icon" type="image/png" href="./IMG/NendoLux/NendoLuxLogo.webp">
+        <title>NendoLux - Bolsa</title>
+        <link rel="icon" type="image/png" href="../IMG/NendoLux/NendoLuxLogo.webp">
         <!--Style-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-        <link rel="stylesheet" href="./CSS/index.css">
-        <!--libraries-->
+        <link rel="stylesheet" href="../CSS/buy.css">
+        <!--Libraries-->
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     </head>
     <header>
@@ -29,7 +29,7 @@
                                         <div class="container text-center">
                                             <div class="row">
                                                 <div class="col-4">
-                                                    <img src="./IMG/IndexIMG/UserTemp.webp" class="img-fluid" alt="KaseemIMG">
+                                                    <img src="../IMG/IndexIMG/UserTemp.webp" class="img-fluid" alt="KaseemIMG">
                                                 </div>
                                                 <div class="col-8">
                                                     <p style="text-align: left;">Kaseem</p>
@@ -61,7 +61,7 @@
                                         <div class="container text-center">
                                             <div class="row">
                                                 <div class="col-4">
-                                                    <img src="./IMG/IndexIMG/UserTemp.webp" class="img-fluid" alt="KaseemIMG">
+                                                    <img src="../IMG/IndexIMG/UserTemp.webp" class="img-fluid" alt="KaseemIMG">
                                                 </div>
                                                 <div class="col-8">
                                                     <p style="text-align: left;">Name</p>
@@ -93,7 +93,7 @@
                                         <div class="container text-center">
                                             <div class="row">
                                                 <div class="col-4">
-                                                    <img src="./IMG/IndexIMG/UserTemp.webp" class="img-fluid" alt="KaseemIMG">
+                                                    <img src="../IMG/IndexIMG/UserTemp.webp" class="img-fluid" alt="KaseemIMG">
                                                 </div>
                                                 <div class="col-8">
                                                     <p style="text-align: left;">Name</p>
@@ -128,8 +128,8 @@
                     <!-- Imagotipo-->
                     <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="./index.html">
-                                <img src="./IMG/NendoLux/NendoLuxLogo.webp" alt="NendoLuxImagotipo" id="brand-logo" class="brand-logo">
+                            <a class="nav-link active" aria-current="page" href="../index.html">
+                                <img src="../IMG/NendoLux/NendoLuxLogo.webp" alt="NendoLuxImagotipo" id="brand-logo" class="brand-logo">
                             </a>
                         </li>
                     </ul>
@@ -138,37 +138,39 @@
                         <!-- Bolsa -->
                         <li class="nav-item me-2 position-relative">
                             <a class="nav-link active" aria-current="page" href="#" id="bolsa-icon">
-                                <img src="./IMG/Icons/BagIcon.webp" alt="Bolsa" class="icono-navbar">
+                                <img src="../IMG/Icons/BagIcon.webp" alt="Bolsa" class="icono-navbar">
                             </a>
                             <div id="myBolsa" class="d-none position-absolute bg-white p-3 shadow">
-                                <ul class="list-unstyled mb-0">
+                                <ul class="list-unstyled mb-0" id="cart-items">
                                     <p style="font-size: 20px; text-decoration: none;">Agregado a la bolsa de compras</p>
                                     <hr>
-                                    <p> Nada aún</p>
+                                    <div id="cart-empty">
+                                        <p>Nada aún</p>
+                                    </div>
                                     <hr>
-                                    <a href="./Cart/buy.html" class="btn btn-outline-secondary">Finalizar compra</a>
+                                    <a href="./buy.html" class="btn btn-outline-secondary">Finalizar compra</a>
                                     <p></p>
-                                    <a href="./Cart/cart.html" class="btn btn-dark">Ver bolsa de compras</a>
+                                    <a href="../Cart/cart.html" class="btn btn-dark">Ver bolsa de compras</a>
                                 </ul>
                             </div>
                         </li>
                         <!-- User -->
                         <li class="nav-item me-2 position-relative">
                             <a class="nav-link active" aria-current="page" href="#" id="user-icon">
-                                <img src="./IMG/Icons/UserIcon.webp" alt="User" class="icono-navbar">
+                                <img src="../IMG/Icons/UserIcon.webp" alt="User" class="icono-navbar">
                             </a>
                             <div id="myUser" class="d-none position-absolute bg-white p-3 shadow">
                                 <ul class="list-unstyled mb-0">
                                     <p style="font-size: 20px; text-decoration: none;">Su cuenta</p>
                                     <hr>
-                                    <li class="py-2"><a href="./Auth/logIn.html">Iniciar sesión</a></li>
+                                    <li class="py-2"><a href="../Auth/logIn.html">Iniciar sesión</a></li>
                                 </ul>
                             </div>
                         </li>
                         <!-- Buscar -->
                         <li class="nav-item me-2 position-relative">
                             <a class="nav-link active" aria-current="page" href="#" id="search-icon">
-                                <img src="./IMG/Icons/SearchIcon.webp" alt="Buscar" class="icono-navbar">
+                                <img src="../IMG/Icons/SearchIcon.webp" alt="Buscar" class="icono-navbar">
                             </a>
                             <div id="mySearch" class="d-none position-absolute bg-white p-3 shadow">
                                 <div class="search__container">
@@ -177,8 +179,8 @@
                                 <ul class="list-unstyled mb-0">
                                     <br>
                                     <p style="font-size: 20px;">También pude buscar</p>
-                                    <li class="py-2"><a href="./HTML/kimetsuNoYaiba.html">Línea Exclusiva</a></li>
-                                    <li class="py-2"><a href="./HTML/kamikatsu.html">Línea de lanzamiento</a></li>
+                                    <li class="py-2"><a href="../HTML/kimetsuNoYaiba.html">Línea Exclusiva</a></li>
+                                    <li class="py-2"><a href="../HTML/kamikatsu.html">Línea de lanzamiento</a></li>
                                 </ul>
                                 <!-- Contenedor de resultados -->
                                 <div id="search-results" class="mt-3"></div>
@@ -187,22 +189,22 @@
                         <!-- Catálogo -->
                         <li class="nav-item me-2 position-relative">
                             <a class="nav-link active" aria-current="page" href="#" id="catalogo-icon">
-                                <img src="./IMG/Icons/MoreIcon.webp" alt="Catálogo" class="icono-navbar">
+                                <img src="../IMG/Icons/MoreIcon.webp" alt="Catálogo" class="icono-navbar">
                             </a>
                             <div id="myCatalog" class="d-none position-absolute bg-white p-3 shadow">
                                 <ul class="list-unstyled mb-0">
-                                    <li class="py-2"><a href="./HTML/persona5.html" style="font-size: 20px; text-decoration: none;">Persona 5</a></li>
-                                    <li class="py-2"><a href="./HTML/persona5.html" style="font-size: 20px; text-decoration: none;">Persona 5 Royal</a></li>
-                                    <li class="py-2"><a href="./HTML/persona5Royal.html" style="font-size: 20px; text-decoration: none;">Persona 3</a></li>
-                                    <li class="py-2"><a href="./HTML/kaguyaSama.html" style="font-size: 20px; text-decoration: none;">Kaguya-sama: Love is War</a></li>
-                                    <li class="py-2"><a href="./HTML/callOfTheNight.html" style="font-size: 20px; text-decoration: none;">Call of the Night</a></li>
-                                    <li class="py-2"><a href="./HTML/kobayashisDragonMaid.html" style="font-size: 20px; text-decoration: none;">Kobayashi's Dragon Maid</a></li>
-                                    <li class="py-2"><a href="./HTML/tomoChanIsAGirl.html" style="font-size: 20px; text-decoration: none;">Tomo-chan is a Girl</a></li>
-                                    <li class="py-2"><a href="./HTML/kamikatsu.html" style="font-size: 20px; text-decoration: none;">Kamikatsu</a></li>
-                                    <li class="py-2"><a href="./HTML/kimetsuNoYaiba.html" style="font-size: 20px; text-decoration: none;">Kimetsu no Yaiba</a></li>
-                                    <li class="py-2"><a href="./HTML/chainsawMan.html" style="font-size: 20px; text-decoration: none;">Chainsaw Man</a></li>
+                                    <li class="py-2"><a href="../HTML/persona5.html" style="font-size: 20px; text-decoration: none;">Persona 5</a></li>
+                                    <li class="py-2"><a href="../HTML/persona5Royal.html" style="font-size: 20px; text-decoration: none;">Persona 5 Royal</a></li>
+                                    <li class="py-2"><a href="../HTML/persona3.html" style="font-size: 20px; text-decoration: none;">Persona 3</a></li>
+                                    <li class="py-2"><a href="../HTML/kaguyaSama.html" style="font-size: 20px; text-decoration: none;">Kaguya-sama: Love is War</a></li>
+                                    <li class="py-2"><a href="../HTML/callOfTheNight.html" style="font-size: 20px; text-decoration: none;">Call of the Night</a></li>
+                                    <li class="py-2"><a href="../HTML/kobayashisDragonMaid.html" style="font-size: 20px; text-decoration: none;">Kobayashi's Dragon Maid</a></li>
+                                    <li class="py-2"><a href="../HTML/tomoChanIsAGirl.html" style="font-size: 20px; text-decoration: none;">Tomo-chan is a Girl</a></li>
+                                    <li class="py-2"><a href="./kamikatsu.html" style="font-size: 20px; text-decoration: none;">Kamikatsu</a></li>
+                                    <li class="py-2"><a href="./kimetsuNoYaiba.html" style="font-size: 20px; text-decoration: none;">Kimetsu no Yaiba</a></li>
+                                    <li class="py-2"><a href="../HTML/chainsawMan.html" style="font-size: 20px; text-decoration: none;">Chainsaw Man</a></li>
                                     <br>
-                                    <li class="py-2"><a href="./Auth/logIn.html">Iniciar Sesión</a></li>
+                                    <li class="py-2"><a href="../Auth/logIn.html">Iniciar Sesión</a></li>
                                 </ul>
                             </div>
                         </li>
@@ -212,52 +214,153 @@
         </nav>
     </header>
     <body>
-        <!--Portada-->
-        <div>
-            <img src="./IMG/IndexIMG/NendoroidsImgGeneral.webp" class="img-fluid cover" alt="Portada">
-        </div>
-        <!-- Sections Promo -->
-        <div class="text-center padding20" style="font-size: 30px;">
-            <p><strong>Colecciones NendoLux</strong></p>
-        </div>
-        <div class="container text-center padding20">
+        <div class="container" style="padding-top: 200px; padding-bottom: 50px;">
             <div class="row">
-                <div class="col-12 col-md-6">
-                    <a style="text-decoration: none; color:black;" href="./HTML/kimetsuNoYaiba.html">
-                        <img src="./IMG/KimetsuNoYaibaIMG/KimetsuNoYaibaCover.webp" class="img-fluid" alt="Línea Popular">
-                    <p class="text-center padding20" style="font-size: 20px;">Kimetsu No Yaiba</p>
-                    </a>
-                </div>
-                <div class="col-12 col-md-6">
-                    <a style="text-decoration: none; color: black;" href="./HTML/kamikatsu.html">
-                        <img href="./HTML/kamikatsu.html" src="./IMG/KamikatsuIMG/KamikatsuCover.webp" class="img-fluid" alt="Línea Reciente">
-                        <p class="text-center padding20" style="font-size: 20px;">Kamikatsu: Working for God in a Godless World</p>
-                    </a>
+                <div class="col-12 col-md-8 text-left" style="padding-bottom: 30px;">
+                    <div class="box">
+                        <p style="font-size: 23px;">Está comprando como: .</p>
+                        <p style="font-size: 20px;">  user.email</p>
+                    </div>
+                    <!--Envío-->
+                    <p style="font-size: 30px; padding-top: 20px;">1. DIRECCIÓN DE ENVÍO</p>
+                    <div class="form-container">
+                        <form style="padding-top: 10px;">
+                            <div class="form-group row">
+                                <div class="col">
+                                    <input type="text" id="nombre" name="nombre" required placeholder="Nombre*" class="form-control">
+                                </div>
+                                <div class="col">
+                                    <input type="text" id="apellido" name="apellido" required placeholder="Apellido*" class="form-control">
+                                </div>
+                            </div>
+                            <br>
+                            <div class="form-group">
+                                <input type="text" id="direccion" name="direccion" required placeholder="Dirección*" class="form-control">
+                            </div>
+                            <br>
+                            <div class="form-group row">
+                                <div class="col">
+                                    <input type="text" id="ciudad" name="ciudad" required placeholder="Ciudad*" class="form-control">
+                                </div>
+                                <div class="col">
+                                    <input type="number" id="codigo" name="codigo" required placeholder="CP*" class="form-control">
+                                </div>
+                                <div class="col">
+                                    <input type="text" id="estado" name="estado" required placeholder="Estado*" class="form-control">
+                                </div>
+                            </div>
+                            <br>
+                            <div class="form-group row">
+                                <div class="col">
+                                    <input type="number" id="lada" name="lada" required placeholder="Lada*" class="form-control">
+                                </div>
+                                <div class="col">
+                                    <input type="number" id="numero" name="numero" required placeholder="Número*" class="form-control">
+                                </div>
+                            </div>
+                            <br>
+                            <button type="submit" class="btn btn-outline-dark">GUARDAR</button>
+                        </form>
+                    </div>
+                    <!--Gift-->
+                    <p style="font-size: 30px; padding-top: 20px;">2. REGALOS</p> 
+                    <div class="gift-container"> 
+                        <div> 
+                            <input type="checkbox" id="eliminar-precio" class="form-check-input"> 
+                            <label for="eliminar-precio" class="form-check-label">Eliminar precio de factura</label> 
+                        </div> 
+                        <div> 
+                            <input type="checkbox" id="anadir-mensaje" class="form-check-input"> 
+                            <label for="anadir-mensaje" class="form-check-label">Añadir mensaje de regalo</label> 
+                        </div> 
+                        <div class="gift-message"> 
+                            <p style="font-size: 25px;">MENSAJE DE REGALO</p> 
+                            <textarea id="mensaje" placeholder="Escriba su mensaje aquí..." class="form-control"></textarea> 
+                            <p>CARACTERES: 180</p> 
+                        </div> 
+                        <button type="submit" class="btn btn-outline-dark">GUARDAR</button> 
+                    </div>
+                    <!--Pago Part-->
+                    <p style="font-size: 30px; padding-top: 20px;">3. PAGO</p>
+                    <div class="pay-container">
+                        <div class="accordion" id="accordionExample">
+                            <!--Channel #1-->
+                            <div class="accordion-item">
+                                <p class="accordion-header">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="font-size: 25px;">
+                                        Tarjeta de crédito
+                                    </button>
+                                </p>
+                                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <div class="form-group"> 
+                                            <input type="number" id="numero" name="numero" required placeholder="Número*"> 
+                                        </div> 
+                                        <div class="form-group-row"> 
+                                            <div class="form-group"> 
+                                                <input type="number" id="cvv" name="cvv" required placeholder="CVV*"> 
+                                            </div> 
+                                            <div class="form-group"> 
+                                                <input type="number" id="mm" name="mm" required placeholder="MM*"> 
+                                            </div> 
+                                            <div class="form-group"> 
+                                                <input type="number" id="aaaa" name="aaaa" required placeholder="AAAA*"> 
+                                            </div> 
+                                        </div> 
+                                        <div class="form-group"> 
+                                            <input type="text" id="nombre" name="nombre" required placeholder="Nombre*"> 
+                                        </div> 
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Channel #2-->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" style="font-size: 25px;">
+                                        Paypal
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <div class="form-group-row">
+                                            <button id="pagar-paypal" class="btn btn-outline-dark">
+                                                <p>CONTINUE CON</p> 
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-paypal" viewBox="0 0 16 16"> <path d="M14.06 3.713c.12-1.071-.093-1.832-.702-2.526C12.628.356 11.312 0 9.626 0H4.734a.7.7 0 0 0-.691.59L2.005 13.509a.42.42 0 0 0 .415.486h2.756l-.202 1.28a.628.628 0 0 0 .62.726H8.14c.429 0 .793-.31.862-.731l.025-.13.48-3.043.03-.164.001-.007a.35.35 0 0 1 .348-.297h.38c1.266 0 2.425-.256 3.345-.91q.57-.403.993-1.005a4.94 4.94 0 0 0 .88-2.195c.242-1.246.13-2.356-.57-3.154a2.7 2.7 0 0 0-.76-.59l-.094-.061ZM6.543 8.82a.7.7 0 0 1 .321-.079H8.3c2.82 0 5.027-1.144 5.672-4.456l.003-.016q.326.186.548.438c.546.623.679 1.535.45 2.71-.272 1.397-.866 2.307-1.663 2.874-.802.57-1.842.815-3.043.815h-.38a.87.87 0 0 0-.863.734l-.03.164-.48 3.043-.024.13-.001.004a.35.35 0 0 1-.348.296H5.595a.106.106 0 0 1-.105-.123l.208-1.32z"/> </svg> 
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="padding-top: 20px;">
+                            <button type="submit" class="btn btn-outline-dark">CONFIRMAR LOS DETALLES</button> 
+                        </div>
+                    </div>
+                </div>        
+                <!--Checkout part-->        
+                <div class="col-12 col-md-4 text-left">
+                    <p style="font-size: 30px; border-bottom: 2px solid #000;">Resumen de su pedido</p>
+                    <div class="checkout-container padding20">
+                        <div class="checkout-item"> 
+                            <span class="checkout-label">SUBTOTAL</span> 
+                            <span class="checkout-price" id="subtotal">MXN $</span> 
+                        </div> 
+                        <div class="checkout-item"> 
+                            <span class="checkout-label">ENVIO</span> 
+                            <span class="checkout-price" id="envio">MXN $</span> 
+                        </div> 
+                        <div class="checkout-item"> 
+                            <span class="checkout-label">TOTAL</span> 
+                            <span class="checkout-price" id="total">MXN $</span> 
+                        </div> 
+                        <div class="checkout-item"> 
+                            <span class="checkout-label">IVA</span> 
+                            <span class="checkout-price" id="iva">MXN $</span> 
+                        </div> 
+                    </div>
                 </div>
             </div>
-        </div>
-        <!--Servicios-->
-        <div class="padding20 text-center">
-            <p><strong style="font-size: 30px;">
-                Servicios
-            </strong></p>
-        </div>
-        <div class="container text-center">
-            <div class="row">
-                <div class="col-12 col-md-8 order-0 order-md-0">
-                    <img src="./IMG/PackageIMG/NendoLuxPackage.webp" class="img-fluid" alt="Packaging">
-                </div>
-                <div class="col-12 col-md-4 order-1 order-md-1">
-                    <p><strong class="padding20" style="font-size: 20px;">Embalaje</strong></p>
-                    <p class="txtJustify">
-                        En NendoLux, nos comprometemos a ofrecer un embalaje cuidadoso y de la más alta calidad para asegurar que cada uno de nuestros productos llegue a nuestros clientes en perfectas condiciones. Utilizamos materiales premium y técnicas avanzadas para proteger cada artículo, reflejando nuestro compromiso con la excelencia en cada detalle.
-                    </p>
-                    <p class="txtJustify">
-                        Nuestro embalaje no solo garantiza la seguridad durante el transporte, sino que también enriquece la experiencia de nuestros clientes al recibir sus compras de manera impecable. En NendoLux, calidad y presentación van de la mano.
-                    </p>
-                </div>
-            </div>
-        </div>
+        </div>        
     </body>
     <footer>
         <div class="container d-flex flex-column justify-content-between">
@@ -291,24 +394,25 @@
                         A pesar de que NendoLux es un comercio simulado, los productos presentados en la plataforma existen y están disponibles en el mercado.
                     </p>
                     <br>
-                    <img src="./IMG/NendoLux/NendoLuxLogoWhite.webp" class="img-fluid" alt="NendoLuxImagotipoWhite">
+                    <img src="../IMG/NendoLux/NendoLuxLogoWhite.webp" class="img-fluid" alt="NendoLuxImagotipoWhite">
                 </div>
             </div>
             <div class="row justify-content-center">
                 <div class="col-12 d-flex justify-content-center">
-                    <img src="./IMG/NendoLux/NendoLuxIsoBlack.webp" class="img-fluid" alt="NenoLux Isotipo">
+                    <img src="../IMG/NendoLux/NendoLuxIsoBlack.webp" class="img-fluid" alt="NenoLux Isotipo">
                 </div>
             </div>
-            <!--Temp Test-->
-            <div>
-                <a href="./Auth/logIn.html" class="btn btn-link">Log In View</a>
-            </div>
+        </div>
+        <a href="./logInEmail.html">Log In Email Test</a>
     </footer>
     <!--Bootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <!--Navbar-->
-    <script src="./JS/animation.js"></script>
-    <script src="./JS/navbarColor.js"></script>
-    <script src="./JS/navbarClick.js"></script>
-    <script src="./JS/searchBarIndex.js"></script>
+    <!--NavbarConfiguration-->
+    <script src="../JS/animation.js"></script>
+    <script src="../JS/navbarColor.js"></script>
+    <script src="../JS/navbarClick.js"></script>
+    <script src="../JS/searchBar.js"></script>
+    <!--Cart-->
+    <script src="../JS/cart.js"></script>
+    <script src="../JS/priceUpate.js"></script>
 </html>

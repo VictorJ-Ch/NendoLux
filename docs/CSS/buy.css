@@ -316,6 +316,9 @@ button {
 {
     text-align: justify;
 }
+.checkout-container-one { 
+    width: 300px; 
+    margin: 0 100px; } 
 .checkout-container { 
     width: 300px; margin: 0 auto; } 
 .checkout-item { 
@@ -330,7 +333,7 @@ button {
 } 
 .checkout-price { 
     text-align: right; 
-    width: 100px;
+    width: 300px;
 } 
 .btn { 
     display: flex; 

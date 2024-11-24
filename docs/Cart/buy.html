@@ -337,25 +337,26 @@
                         </div>
                     </div>
                 </div>        
-                <!--Checkout part-->        
+                <!-- Checkout part -->        
                 <div class="col-12 col-md-4 text-left">
                     <p style="font-size: 30px; border-bottom: 2px solid #000;">Resumen de su pedido</p>
-                    <div class="checkout-container padding20">
+                    <div id="checkout-container" class="checkout-container-one" style="padding-top: 20px;"></div>
+                    <div class="checkout-container padding10">
                         <div class="checkout-item"> 
-                            <span class="checkout-label">SUBTOTAL</span> 
-                            <span class="checkout-price" id="subtotal">MXN $</span> 
+                            <span class="checkout-label" style="font-size: 15px;">SUBTOTAL</span> 
+                            <span class="checkout-price" id="subtotal" style="font-size: 15px;">MXN $</span> 
                         </div> 
                         <div class="checkout-item"> 
-                            <span class="checkout-label">ENVIO</span> 
-                            <span class="checkout-price" id="envio">MXN $</span> 
+                            <span class="checkout-label" style="font-size: 15px;">ENVIO</span> 
+                            <span class="checkout-price" id="envio" style="font-size: 15px;">MXN $</span> 
                         </div> 
                         <div class="checkout-item"> 
-                            <span class="checkout-label">TOTAL</span> 
-                            <span class="checkout-price" id="total">MXN $</span> 
+                            <span class="checkout-label" style="font-size: 20px; font-weight: 700;">TOTAL</span> 
+                            <span class="checkout-price" id="total" style="font-size: 20px; font-weight: 700;">MXN $</span> 
                         </div> 
                         <div class="checkout-item"> 
-                            <span class="checkout-label">IVA</span> 
-                            <span class="checkout-price" id="iva">MXN $</span> 
+                            <span class="checkout-label" style="font-size: 15px;">IVA</span> 
+                            <span class="checkout-price" id="iva" style="font-size: 15px;">MXN $</span> 
                         </div> 
                     </div>
                 </div>
@@ -413,6 +414,5 @@
     <script src="../JS/navbarClick.js"></script>
     <script src="../JS/searchBar.js"></script>
     <!--Cart-->
-    <script src="../JS/cart.js"></script>
-    <script src="../JS/priceUpate.js"></script>
+    <script src="../JS/cartResume.js"></script>
 </html>

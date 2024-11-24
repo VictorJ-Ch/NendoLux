@@ -91,14 +91,12 @@ function updateCartDisplay() {
 
 function displayCartItems() {
     console.log('displayCartItems called'); // Mensaje de depuración
-    const container = document.getElementById('container');
     const checkoutContainer = document.getElementById('checkout-container');
-    if (!container || !checkoutContainer) {
-        console.error('Container or checkoutContainer not found'); // Mensaje de error si no se encuentran los contenedores
+    if (!checkoutContainer) {
+        console.error('checkout-container not found'); // Mensaje de error si no se encuentra el contenedor
         return;
     }
 
-    container.innerHTML = '';  // Clear previous content
     checkoutContainer.innerHTML = '';  // Clear previous content in checkout-container
 
     let subtotal = 0;
@@ -110,33 +108,6 @@ function displayCartItems() {
 
         // Calculate total price for the product
         const totalPrice = (10000 * item.Quantity).toFixed(2);
-
-        productElement.innerHTML = `
-            <div class="product-image-dom">
-                <img src="${item.Image}" alt="Product Image">
-            </div>
-            <div class="product-details">
-                <div>${item.Name}</div>
-                <div>
-                    <label for="quantity-${item.Name}">Product Quantity</label>
-                    <select id="quantity-${item.Name}" onchange="updateQuantity('${item.Name}', this.value)">
-                        <option value="1" ${item.Quantity == 1 ? 'selected' : ''}>1</option>
-                        <option value="2" ${item.Quantity == 2 ? 'selected' : ''}>2</option>
-                        <option value="3" ${item.Quantity == 3 ? 'selected' : ''}>3</option>
-                    </select>
-                </div>
-                <button class="btn-eliminar btn btn-outline-dark" onclick="removeFromCart('${item.Name}')">ELIMINAR</button>
-            </div>
-            <div class="product-quantity-price">
-                <div>
-                    <p>Product Price: MXN $${totalPrice}</p>
-                </div>
-            </div>
-        `;
-
-        subtotal += 10000 * item.Quantity;  // Assuming each product costs $10,000 MXN
-
-        container.appendChild(productElement);
 
         const checkoutItem = document.createElement('div');
         checkoutItem.classList.add('d-flex', 'justify-content-between', 'align-items-center', 'mb-2');
@@ -159,6 +130,8 @@ function displayCartItems() {
         `;
 
         checkoutContainer.appendChild(checkoutItem);
+
+        subtotal += 10000 * item.Quantity;  // Assuming each product costs $10,000 MXN
     });
 
     const envio = 500;  // Assuming a fixed shipping cost
@@ -175,6 +148,7 @@ document.addEventListener('DOMContentLoaded', function() {
     console.log('DOM fully loaded and parsed'); // Mensaje de depuración
     displayCartItems();
 });
+
 
 
 

@@ -1,10 +1,16 @@
-# NendoLux
+# ![NendoLux](./Design/Renders/Logos/NendoLuxIsoBlack.png)
+## Despliegues
 [NendoLux GitHubPages deploy](https://victorj-ch.github.io/NendoLux/)
 
 [NendoLux Firebase deploy](https://nendolux.web.app/)
 ## Acerca de NendoLux
-NendoLux es una empresa de e-commerce especializada en la venta de Nendoroids de lujo, ofreciendo figuras de alta calidad para coleccionistas y fanáticos. Su enfoque está en brindar una experiencia premium, tanto en productos como en servicio al cliente.
- 
+<table>
+  <tr>
+    <td><img src="./Design/Renders/Logos/NendoLuxLogoWhite.png" alt="NendoLux Monogram" width="500"></td>
+    <td style="vertical-align: top;">NendoLux es una empresa de e-commerce especializada en la venta de Nendoroids de lujo, ofreciendo figuras de alta calidad para coleccionistas y fanáticos. Su enfoque está en brindar una experiencia premium, tanto en productos como en servicio al cliente.</td>
+  </tr>
+</table>
+
 ## Actividades de los implicados
 ### Víctor "Kaseem" Chavarría
 - App Design.
@@ -37,3 +43,5 @@ NendoLux es una empresa de e-commerce especializada en la venta de Nendoroids de
 - Auth Views.
 - Cart Views.
 - Firebase app deployment.
+- Buy View.
+- Optimization.

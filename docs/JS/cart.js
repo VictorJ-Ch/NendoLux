@@ -54,7 +54,7 @@ function updateCartDisplay() {
     // Bttns
     cartItemsContainer.appendChild(document.createElement('hr'));
     const finalizaCompraButton = document.createElement('a');
-    finalizaCompraButton.href = '#';
+    finalizaCompraButton.href = '../Cart/buy.html';
     finalizaCompraButton.classList.add('btn', 'btn-outline-secondary');
     finalizaCompraButton.innerText = 'Finalizar compra';
 

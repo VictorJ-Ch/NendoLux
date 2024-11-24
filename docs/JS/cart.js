@@ -1,4 +1,5 @@
-let cart = [];
+// Load cart from localStorage on page load
+let cart = JSON.parse(localStorage.getItem('cart')) || [];
 
 // Adding product to cart
 function addToCart(product) {
@@ -10,11 +11,19 @@ function addToCart(product) {
         cart.push(product);
     }
     updateCartDisplay();
+    saveCart();
+}
+
+// Save cart to localStorage
+function saveCart() {
+    localStorage.setItem('cart', JSON.stringify(cart));
 }
 
 // Update cart display
 function updateCartDisplay() {
     const cartItemsContainer = document.getElementById('cart-items');
+    if (!cartItemsContainer) return;  // Check if the element exists
+
     cartItemsContainer.innerHTML = '';
 
     const title = document.createElement('p');
@@ -27,23 +36,32 @@ function updateCartDisplay() {
     if (cart.length === 0) {
         const emptyMessage = document.createElement('div');
         emptyMessage.id = 'cart-empty';
-        emptyMessage.innerHTML = '<p>Nada aún</p>';
+        emptyMessage.innerHTML = '<p>Nothing yet</p>';
         cartItemsContainer.appendChild(emptyMessage);
     } else {
         document.getElementById('cart-empty')?.remove();
+
+        // Determine the correct path for images
+        const basePath = window.location.pathname.includes('index.html') ? './IMG/' : '../IMG/';
 
         cart.forEach(item => {
             const li = document.createElement('li');
             li.classList.add('d-flex', 'justify-content-between', 'align-items-center', 'mb-2');
 
-            // Crear el HTML para cada producto en el carrito
+            // Adjust the image path dynamically
+            const imagePath = `${basePath}${item.Image}`;
+
+            // Calculate total price for the product
+            const totalPrice = (10000 * item.Quantity).toFixed(2);
+
+            // Create HTML for each product in the cart
             li.innerHTML = `
                 <div class="d-flex">
-                    <img src="${item.Image}" alt="${item.Name}" class="img-fluid me-2" style="width: 50px; height: 50px;">
+                    <img src="${imagePath}" alt="${item.Name}" class="img-fluid me-2 product-image">
                     <div>
                         <strong>${item.Name}</strong><br>
-                        <span>$10.800,00 MXN</span><br>
-                        <span>Cantidad: ${item.Quantity}</span>
+                        <span>$${totalPrice} MXN</span><br>
+                        <span>Quantity: ${item.Quantity}</span>
                     </div>
                 </div>
             `;
@@ -51,15 +69,18 @@ function updateCartDisplay() {
         });
     }
 
-    // Bttns
+    // Determine the correct path for buttons
+    const baseButtonPath = window.location.pathname.includes('index.html') ? './Cart/' : '../Cart/';
+
+    // Buttons
     cartItemsContainer.appendChild(document.createElement('hr'));
     const finalizaCompraButton = document.createElement('a');
-    finalizaCompraButton.href = '../Cart/buy.html';
+    finalizaCompraButton.href = `${baseButtonPath}buy.html`;
     finalizaCompraButton.classList.add('btn', 'btn-outline-secondary');
     finalizaCompraButton.innerText = 'Finalizar compra';
 
     const verBolsaButton = document.createElement('a');
-    verBolsaButton.href = '../Cart/cart.html';
+    verBolsaButton.href = `${baseButtonPath}cart.html`;
     verBolsaButton.classList.add('btn', 'btn-dark');
     verBolsaButton.innerText = 'Ver bolsa de compras';
 
@@ -68,6 +89,81 @@ function updateCartDisplay() {
     cartItemsContainer.appendChild(verBolsaButton);
 }
 
+// Display cart items in cart.html
+function displayCartItems() {
+    const container = document.getElementById('container');
+    if (!container) return;
+
+    container.innerHTML = '';  // Clear previous content
+
+    let subtotal = 0;
+
+    cart.forEach(item => {
+        const productElement = document.createElement('div');
+        productElement.classList.add('product-container');
+        productElement.style.marginTop = '20px'; // Add space between product items
+
+        // Calculate total price for the product
+        const totalPrice = (10000 * item.Quantity).toFixed(2);
+
+        productElement.innerHTML = `
+            <div class="product-image-dom">
+                <img src="${item.Image}" alt="Product Image">
+            </div>
+            <div class="product-details">
+                <div>${item.Name}</div>
+                <div>
+                    <label for="quantity-${item.Name}">Product Quantity</label>
+                    <select id="quantity-${item.Name}" onchange="updateQuantity('${item.Name}', this.value)">
+                        <option value="1" ${item.Quantity == 1 ? 'selected' : ''}>1</option>
+                        <option value="2" ${item.Quantity == 2 ? 'selected' : ''}>2</option>
+                        <option value="3" ${item.Quantity == 3 ? 'selected' : ''}>3</option>
+                    </select>
+                </div>
+                <button class="btn-eliminar btn btn-outline-dark" onclick="removeFromCart('${item.Name}')">ELIMINAR</button>
+            </div>
+            <div class="product-quantity-price">
+                <div>
+                    <p>Product Price: MXN $${totalPrice}</p>
+                </div>
+            </div>
+        `;
+
+        subtotal += 10000 * item.Quantity;  // Assuming each product costs $10,000 MXN
+
+        container.appendChild(productElement);
+    });
+
+    const envio = 500;  // Assuming a fixed shipping cost
+    const iva = subtotal * 0.16;  // Assuming 16% VAT
+    const total = subtotal + envio + iva;
+
+    document.getElementById('subtotal').innerText = `MXN $${subtotal.toFixed(2)}`;
+    document.getElementById('envio').innerText = `MXN $${envio.toFixed(2)}`;
+    document.getElementById('total').innerText = `MXN $${total.toFixed(2)}`;
+    document.getElementById('iva').innerText = `MXN $${iva.toFixed(2)}`;
+}
+
+// Update quantity in cart
+function updateQuantity(productName, newQuantity) {
+    const product = cart.find(item => item.Name === productName);
+    if (product) {
+        product.Quantity = parseInt(newQuantity);
+        saveCart();
+        updateCartDisplay();  // Update cart display to reflect new quantity
+        displayCartItems();   // Update cart items in cart.html to reflect new quantity and price
+    }
+}
+
+// Remove product from cart
+function removeFromCart(productName) {
+    cart = cart.filter(item => item.Name !== productName);
+    saveCart();
+    updateCartDisplay();  // Update cart display after removing product
+    displayCartItems();   // Update cart items in cart.html after removing product
+}
+
+// Load products
 function loadProducts() {
     // JSON's
     Promise.all([
@@ -107,10 +203,16 @@ function loadProducts() {
         });
     })
     .catch(error => {
-        console.error('Error al cargar los JSON:', error);
+        console.error('Error loading the JSONs:', error);
     });
 }
 
 document.addEventListener('DOMContentLoaded', function() {
     loadProducts();
+    updateCartDisplay();
+
+    // Check if on cart.html
+    if (window.location.pathname.includes('cart.html')) {
+        displayCartItems();
+    }
 });

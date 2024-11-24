@@ -40,20 +40,20 @@ iconIds.forEach(id => {
 // Función para posicionar los elementos dentro del viewport
 function positionElement(element) {
     element.style.left = '0';
-    element.style.top = '100%';
+    element.style.top = '100%'; // Ajuste aquí para desplegar hacia abajo
     const rect = element.getBoundingClientRect();
     const viewportWidth = window.innerWidth;
     const viewportHeight = window.innerHeight;
 
-    // Acomodo dentro del viewport
+    // Ajustar dentro del viewport
     if (rect.right > viewportWidth) {
-        element.style.left = `${viewportWidth - rect.right - 10}px`; // Izquierda
+        element.style.left = `${viewportWidth - rect.right - 10}px`;
     }
     if (rect.left < 0) {
-        element.style.left = '10px'; // Derecha
+        element.style.left = '10px';
     }
     if (rect.bottom > viewportHeight) {
-        element.style.top = `${-rect.height}px`; // Arriba
+        element.style.top = `${-rect.height}px`;
     }
 }
 
@@ -73,3 +73,4 @@ window.addEventListener('scroll', function() {
         }
     });
 });
+

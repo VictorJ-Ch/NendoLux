@@ -218,27 +218,51 @@
             <div class="row">
                 <div class="col-12 col-md-8 text-left" style="padding-bottom: 30px;">
                     <p style="font-size: 30px; border-bottom: 2px solid #000;">Se selección</p>
-                    <div class="product-container"> 
-                        <div class="product-image">
-                            <img src="" alt="Product Image">
+                    <div id="container">
+                        <div class="product-container" style="margin-top: 20px;"> 
+                            <div class="product-image">
+                                <img src="" alt="Product Image">
+                            </div> 
+                            <div class="product-details">
+                            <div>Product Name</div>
+                            <div> 
+                                <label for="quantity">Product Quantity</label> 
+                                <select id="quantity"> 
+                                    <option value="1">1</option> 
+                                    <option value="2">2</option> 
+                                    <option value="3">3</option> 
+                                </select> 
+                            </div> 
+                            <button class="btn-eliminar btn btn-outline-dark">ELIMINAR</button> 
                         </div> 
-                        <div class="product-details">
-                        <div>Product Name</div>
-                        <div> 
-                            <label for="quantity">Product Quantity</label> 
-                            <select id="quantity"> 
-                                <option value="1">1</option> 
-                                <option value="2">2</option> 
-                                <option value="3">3</option> 
-                            </select> 
+                        <div class="product-quantity-price"> 
+                            <div>
+                                <p>Product Price: MXN $10.000,00</p>
+                            </div> 
                         </div> 
-                        <button class="btn-eliminar btn btn-outline-dark">ELIMINAR</button> 
-                    </div> 
-                    <div class="product-quantity-price"> 
-                        <div>
-                            <p>Product Price: MXN $10.000,00</p>
+                        </div>
+                        <div class="product-container" style="margin-top: 20px;"> 
+                            <div class="product-image">
+                                <img src="" alt="Product Image">
+                            </div> 
+                            <div class="product-details">
+                            <div>Product Name</div>
+                            <div> 
+                                <label for="quantity">Product Quantity</label> 
+                                <select id="quantity"> 
+                                    <option value="1">1</option> 
+                                    <option value="2">2</option> 
+                                    <option value="3">3</option> 
+                                </select> 
+                            </div> 
+                            <button class="btn-eliminar btn btn-outline-dark">ELIMINAR</button> 
                         </div> 
-                    </div> 
+                        <div class="product-quantity-price"> 
+                            <div>
+                                <p>Product Price: MXN $10.000,00</p>
+                            </div> 
+                        </div> 
+                        </div>
                     </div>
                 </div>
                 <div class="col-12 col-md-4 text-left">
@@ -324,5 +348,4 @@
     <script src="../JS/searchBar.js"></script>
     <!--Cart-->
     <script src="../JS/cart.js"></script>
-    <script src="../JS/priceUpate.js"></script>
 </html>

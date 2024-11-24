@@ -299,12 +299,20 @@ body
     border: 1px solid #000; 
     padding: 10px; 
 } 
-.product-image { 
+.product-image img {
     width: 150px; 
     height: 150px; 
     border: 1px solid #000; 
     margin-right: 10px; 
-} 
+}
+
+.product-image-dom img {
+    width: 250px;
+    height: 250px;
+    display: block;
+    object-fit: cover;
+}
+
 .product-details { 
     flex: 1; 
     display: flex; 

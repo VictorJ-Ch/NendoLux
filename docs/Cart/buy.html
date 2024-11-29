@@ -17,8 +17,8 @@
         <script src="../src/app.js"></script>
         <script src="../src/servidor.js"></script>
 
-        <script src="https://www.paypal.com/sdk/js?client-id=Adp6hMNzNLvVS8ApJ86Aq7N8wwqGfIeYzSC42hiYN-1QXCkzcIgDHP-stzalgE6UAYMvMEkv-Ic2V4C7"></script>
-
+        <script src="https://www.paypal.com/sdk/js?client-id=Adp6hMNzNLvVS8ApJ86Aq7N8wwqGfIeYzSC42hiYN-1QXCkzcIgDHP-stzalgE6UAYMvMEkv-Ic2V4C7&buyer-country=US&currency=USD&components=buttons&enable-funding=card&disable-funding=venmo,paylater"
+        data-sdk-integration-source="developer-studio"></script>
     </head>
     <header>
         <!--NavBar-->
@@ -425,27 +425,247 @@
     <script src="../JS/searchBar.js"></script>
     <!--Cart-->
     <script src="../JS/cartResume.js"></script>
-    <script>
-        paypal.Buttons({
-    createOrder: function(data, actions) {
-        return actions.order.create({
-            purchase_units: [{
-                amount: {
-                    value: '10000',
-                    currency_code: 'MXN'
+    <script>window.paypal
+        .Buttons({
+            style: {
+                shape: "pill",
+                layout: "vertical",
+                color: "silver",
+                label: "pay",
+            },
+            message: {
+                amount: 100,
+            } ,
+    
+            async createOrder() {
+                try {
+                    const response = await fetch("/api/orders", {
+                        method: "POST",
+                        headers: {
+                            "Content-Type": "application/json",
+                        },
+                        // use the "body" param to optionally pass additional order information
+                        // like product ids and quantities
+                        body: JSON.stringify({
+                            cart: [
+                                {
+                                    id: "YOUR_PRODUCT_ID",
+                                    quantity: "YOUR_PRODUCT_QUANTITY",
+                                },
+                            ],
+                        }),
+                    });
+    
+                    const orderData = await response.json();
+    
+                    if (orderData.id) {
+                        return orderData.id;
+                    }
+                    const errorDetail = orderData?.details?.[0];
+                    const errorMessage = errorDetail
+                        ? `${errorDetail.issue} ${errorDetail.description} (${orderData.debug_id})`
+                        : JSON.stringify(orderData);
+    
+                    throw new Error(errorMessage);
+                } catch (error) {
+                    console.error(error);
+                    // resultMessage(`Could not initiate PayPal Checkout...<br><br>${error}`);
                 }
-            }]
-        });
-    },
-    onApprove: function(data, actions) {
-        // Aquí puedes manejar la aprobación del pago
-        alert('El pago fue aprobado');
-    },
-    onCancel: function(data, actions) {
-        // Aquí puedes manejar la cancelación del pago
-        alert('El pago fue cancelado');
-    }
-}).render('#paypal-button-container');
+            } ,
+    
+            async onApprove(data, actions) {
+                try {
+                    const response = await fetch(
+                        `/api/orders/${data.orderID}/capture`,
+                        {
+                            method: "POST",
+                            headers: {
+                                "Content-Type": "application/json",
+                            },
+                        }
+                    );
+    
+                    const orderData = await response.json();
+                    // Three cases to handle:
+                    //   (1) Recoverable INSTRUMENT_DECLINED -> call actions.restart()
+                    //   (2) Other non-recoverable errors -> Show a failure message
+                    //   (3) Successful transaction -> Show confirmation or thank you message
+    
+                    const errorDetail = orderData?.details?.[0];
+    
+                    if (errorDetail?.issue === "INSTRUMENT_DECLINED") {
+                        // (1) Recoverable INSTRUMENT_DECLINED -> call actions.restart()
+                        // recoverable state, per
+                        // https://developer.paypal.com/docs/checkout/standard/customize/handle-funding-failures/
+                        return actions.restart();
+                    } else if (errorDetail) {
+                        // (2) Other non-recoverable errors -> Show a failure message
+                        throw new Error(
+                            `${errorDetail.description} (${orderData.debug_id})`
+                        );
+                    } else if (!orderData.purchase_units) {
+                        throw new Error(JSON.stringify(orderData));
+                    } else {
+                        // (3) Successful transaction -> Show confirmation or thank you message
+                        // Or go to another URL:  actions.redirect('thank_you.html');
+                        const transaction =
+                            orderData?.purchase_units?.[0]?.payments
+                                ?.captures?.[0] ||
+                            orderData?.purchase_units?.[0]?.payments
+                                ?.authorizations?.[0];
+                        resultMessage(
+                            `Transaction ${transaction.status}: ${transaction.id}<br>
+                <br>See console for all available details`
+                        );
+                        console.log(
+                            "Capture result",
+                            orderData,
+                            JSON.stringify(orderData, null, 2)
+                        );
+                    }
+                } catch (error) {
+                    console.error(error);
+                    resultMessage(
+                        `Sorry, your transaction could not be processed...<br><br>${error}`
+                    );
+                }
+            } ,
+        })
+        .render("#paypal-button-container"); </script>
 
-    </script>
+        <script>import express from "express";
+import "dotenv/config";
+import {
+    ApiError,
+    CheckoutPaymentIntent,
+    Client,
+    Environment,
+    LogLevel,
+    OrdersController,
+    PaymentsController,
+} from "@paypal/paypal-server-sdk";
+import bodyParser from "body-parser";
+
+const app = express();
+app.use(bodyParser.json());
+
+const {
+    PAYPAL_CLIENT_ID,
+    PAYPAL_CLIENT_SECRET,
+    PORT = 8080,
+} = process.env;
+
+const client = new Client({
+    clientCredentialsAuthCredentials: {
+        oAuthClientId: PAYPAL_CLIENT_ID,
+        oAuthClientSecret: PAYPAL_CLIENT_SECRET,
+    },
+    timeout: 0,
+    environment: Environment.Sandbox,
+    logging: {
+        logLevel: LogLevel.Info,
+        logRequest: { logBody: true },
+        logResponse: { logHeaders: true },
+    },
+}); 
+const ordersController = new OrdersController(client);
+const paymentsController = new PaymentsController(client);
+
+/**
+ * Create an order to start the transaction.
+ * @see https://developer.paypal.com/docs/api/orders/v2/#orders_create
+ */
+const createOrder = async (cart) => {
+    const collect = {
+        body: {
+            intent: "CAPTURE",
+            purchaseUnits: [
+                {
+                    amount: {
+                        currencyCode: "USD",
+                        value: "100",
+                    },
+                },
+            ],
+        },
+        prefer: "return=minimal",
+    }; 
+
+    try {
+        const { body, ...httpResponse } = await ordersController.ordersCreate(
+            collect
+        );
+        // Get more response info...
+        // const { statusCode, headers } = httpResponse;
+        return {
+            jsonResponse: JSON.parse(body),
+            httpStatusCode: httpResponse.statusCode,
+        };
+    } catch (error) {
+        if (error instanceof ApiError) {
+            // const { statusCode, headers } = error;
+            throw new Error(error.message);
+        }
+    }
+};
+
+// createOrder route
+app.post("/api/orders", async (req, res) => {
+    try {
+        // use the cart information passed from the front-end to calculate the order amount detals
+        const { cart } = req.body;
+        const { jsonResponse, httpStatusCode } = await createOrder(cart);
+        res.status(httpStatusCode).json(jsonResponse);
+    } catch (error) {
+        console.error("Failed to create order:", error);
+        res.status(500).json({ error: "Failed to create order." });
+    }
+});
+
+
+
+/**
+ * Capture payment for the created order to complete the transaction.
+ * @see https://developer.paypal.com/docs/api/orders/v2/#orders_capture
+ */
+const captureOrder = async (orderID) => {
+    const collect = {
+        id: orderID,
+        prefer: "return=minimal",
+    };
+
+    try {
+        const { body, ...httpResponse } = await ordersController.ordersCapture(
+            collect
+        );
+        // Get more response info...
+        // const { statusCode, headers } = httpResponse;
+        return {
+            jsonResponse: JSON.parse(body),
+            httpStatusCode: httpResponse.statusCode,
+        };
+    } catch (error) {
+        if (error instanceof ApiError) {
+            // const { statusCode, headers } = error;
+            throw new Error(error.message);
+        }
+    }
+};
+
+// captureOrder route
+app.post("/api/orders/:orderID/capture", async (req, res) => {
+    try {
+        const { orderID } = req.params;
+        const { jsonResponse, httpStatusCode } = await captureOrder(orderID);
+        res.status(httpStatusCode).json(jsonResponse);
+    } catch (error) {
+        console.error("Failed to create order:", error);
+        res.status(500).json({ error: "Failed to capture order." });
+    }
+});
+
+
+app.listen(PORT, () => {
+    console.log(`Node server listening at http://localhost:${PORT}/`);
+}); </script>
 </html>

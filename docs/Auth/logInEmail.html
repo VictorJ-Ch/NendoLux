@@ -214,26 +214,24 @@
         </nav>
     </header>
     <body>
-        <!--Google Auth-->
+        <!--Email Auth-->
         <div class="text-center" style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh;">
-            <p style="font-size: 30px; padding-top: 40px; margin-top: 20px; font-weight: 700;">Cotinue con su correo electrónico</p>
-            <form action="/submit" method="post">
-                <input type="email" id="email" name="email" required placeholder="correo electrónico*" class="form-control">
+            <p style="font-size: 30px; padding-top: 40px; margin-top: 20px; font-weight: 700;">Continue con su correo electrónico</p>
+            <form id="signup-form">
+                <input type="email" id="email-signup" name="email" required placeholder="correo electrónico*" class="form-control">
+                <input type="password" id="password-signup" name="password" required placeholder="cree su contraseña*" class="form-control" style="margin-top: 20px;">
+                <input type="password" id="confirm-password" name="confirm-password" required placeholder="confirme su contraseña*" class="form-control" style="margin-top: 20px;">
+                <button class="btn btn-outline-dark" id="email-signup-btn" style="display: flex; align-items: center; gap: 8px; margin-top: 20px;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                        <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
+                    </svg>
+                    <p style="margin: 0;">Continuar</p>
+                </button>
             </form>
-            <form action="/submit" method="post" style="margin-top: 20px;">
-                <input type="password" id="password" name="password" required placeholder="cree su contraseña*" class="form-control">
-            </form>
-            <form action="/submit" method="post" style="margin-top: 20px;">
-                <input type="password" id="password" name="password" required placeholder="confirme su contraseña*" class="form-control">
-            </form>
-            <button class="btn btn-outline-dark" style="display: flex; align-items: center; gap: 8px; margin-top: 20px;">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
-                    <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
-                </svg>
-                <p style="margin: 0;">Continuar</p>
-            </button>
+            <br>
+            <a href="./SignInEmail.html" class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Ya tiene cuenta MyNendoLux? click aquí</a>
         </div>
-    </body>
+    </body>    
     <footer>
         <div class="container d-flex flex-column justify-content-between">
             <div class="row text-center">
@@ -285,5 +283,63 @@
     <script src="../JS/navbarClick.js"></script>
     <script src="../JS/searchBar.js"></script>
     <!--Cart-->
-    <script src="../JS/cart.js"></script>
+    <script src="../JS/cart4Auth.js"></script>
+    <!--Auth-->
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-analytics.js";
+        import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-auth.js";
+    
+        // FIREBASE SETTINGS
+        const firebaseConfig = {
+            apiKey: "AIzaSyDQoDYCHkzNUx5d1LxlOjBeFqqLt_DKdbc",
+            authDomain: "nendolux.firebaseapp.com",
+            projectId: "nendolux",
+            storageBucket: "nendolux.firebasestorage.app",
+            messagingSenderId: "160661286244",
+            appId: "1:160661286244:web:13547f70c886b82df9de71",
+            measurementId: "G-Y8XZN2TEMM"
+        };
+    
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+        const auth = getAuth(app);
+    
+        // EMAIL AUTH
+        // SIGN UP
+        document.getElementById('email-signup-btn').addEventListener('click', (event) => {
+            event.preventDefault();
+            const email = document.getElementById('email-signup').value;
+            const password = document.getElementById('password-signup').value;
+            const confirmPassword = document.getElementById('confirm-password').value;
+    
+            if (password !== confirmPassword) {
+                alert("Las contraseñas no coinciden");
+                return;
+            }
+    
+            createUserWithEmailAndPassword(auth, email, password)
+                .then((userCredential) => {
+                    console.log(userCredential.user);
+                    // NEW VIEW
+                    window.location.href = '../Auth/NewUserProfile.html';
+                })
+                .catch((error) => {
+                    console.error(error);
+                });
+        });
+    </script> 
+    <!--User Settings-->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() { 
+            var email = localStorage.getItem('userEmail'); 
+            if (email) { 
+                document.getElementById('email-signup').value = email;
+            } else { 
+                document.getElementById('email-signup').value = 'No se encontró ningún correo electrónico'; 
+            } 
+        });
+    </script>
 </html>

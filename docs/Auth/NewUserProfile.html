@@ -216,7 +216,7 @@
     <body>
         <div class="text-center" style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh;">
             <p style="font-size: 30px; padding-top: 40px; margin-top: 20px; font-weight: 700;">Perfil MyNendoLux</p>
-            <form>
+            <form onsubmit="saveUserData(); return false;">
                 <select id="tratamiento" name="tratamiento" class="form-select">
                     <option value="">Tratamiento < Sr, Srta, Sra, Sx > </option>
                     <option value="sr">Sr.</option>
@@ -231,61 +231,9 @@
                 <br><br>
                 <input type="date" class="form-control" name="fecha" id="fecha" class="form-control" value="dd/mm/yyyy">
                 <br><br>
-                <!--Ask: modo de colocar solo dia/ mes/ año por separado en el input date-->
-                <!--
-                <select id="dia" name="dia">
-                    <option value="">Día</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                    <option value="9">9</option>
-                    <option value="10">10</option>
-                    <option value="11">11</option>
-                    <option value="12">12</option>
-                    <option value="13">13</option>
-                    <option value="14">14</option>
-                    <option value="15">15</option>
-                    <option value="16">16</option>
-                    <option value="17">17</option>
-                    <option value="18">18</option>
-                    <option value="19">19</option>
-                    <option value="20">20</option>
-                    <option value="21">21</option>
-                    <option value="22">22</option>
-                    <option value="23">23</option>
-                    <option value="24">24</option>
-                    <option value="25">25</option>
-                    <option value="26">26</option>
-                    <option value="27">27</option>
-                    <option value="28">28</option>
-                    <option value="29">29</option>
-                    <option value="30">30</option>
-                    <option value="31">31</option>
-                </select>
-                <select id="mes" name="mes">
-                    <option value="">Mes</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                    <option value="9">9</option>
-                    <option value="10">10</option>
-                    <option value="11">11</option>
-                    <option value="12">12</option>
-                </select>
-                <input type="number" id="ano" name="ano" min="1900" max="2100" required placeholder="Año">-->
                 <label for="terminos"><input type="checkbox" id="terminos" name="terminos" class="form-check-input"> Términos y Condiciones </label>
                 <br><br>
-                <button class="btn btn-outline-dark" style="margin-top: 20px;">
+                <button type="submit" class="btn btn-outline-dark" style="margin-top: 20px;">
                     <p style="margin: 0;">Crear mi perfil</p> </button>
             </form>
         </div>
@@ -341,5 +289,7 @@
     <script src="../JS/navbarClick.js"></script>
     <script src="../JS/searchBar.js"></script>
     <!--Cart-->
-    <script src="../JS/cart.js"></script>
+    <script src="../JS/cart4Auth.js"></script>
+    <!--User Settings-->
+    <script src="../JS/userData.js"></script>
 </html>

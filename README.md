@@ -45,3 +45,12 @@
 - Firebase app deployment.
 - Buy View.
 - Optimization.
+- Email Auth.
+- Google Auth.
+- UX / UI.
+
+### Samuel "Tiburocin" Gutierrez
+- Payment Geteway.
+
+### Jonathan "Zniver" Zavala
+-  Shipping Calculator.

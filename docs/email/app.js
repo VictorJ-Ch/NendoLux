@@ -12,7 +12,7 @@ const templateID = 'template_tkq62fw';
 emailjs.sendForm(serviceID, templateID, this)
     .then(() => {
         btn.value = 'Enviar';
-        alert('Mensaje ENviado Correctamente!');
+        alert('Mensaje Enviado Correctamente!');
     }, (err) => {
         btn.value = 'Enviar';
         alert(JSON.stringify(err));

@@ -1,7 +1,5 @@
 # ![NendoLux](./Design/Renders/Logos/NendoLuxIsoBlack.png)
 ## Despliegues
-[NendoLux GitHubPages deploy](https://victorj-ch.github.io/NendoLux/)
-
 [NendoLux Firebase deploy](https://nendolux.web.app/)
 ## Acerca de NendoLux
 <table>

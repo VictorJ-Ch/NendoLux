@@ -18,3 +18,15 @@ emailjs.sendForm(serviceID, templateID, this)
         alert(JSON.stringify(err));
     });
 });
+
+function habilitarSiguiente() 
+{ 
+    document.getElementById("siguiente").disabled = false; 
+} 
+function cambiarPagina() 
+{ 
+    if (!document.getElementById("siguiente").disabled) 
+        { 
+            window.location.href = "../Envio/envio.html"; 
+        } 
+}

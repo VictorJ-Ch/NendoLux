@@ -51,4 +51,5 @@
 - Payment Geteway.
 
 ### Jonathan "Zniver" Zavala
--  Shipping Calculator.
+- Shipping Calculator.
+- Receipt.

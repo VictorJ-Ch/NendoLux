@@ -9,6 +9,13 @@
   </tr>
 </table>
 
+## Cuenta de prueba de Paypal
+Email:
+> sb-gugd834337114@personal.example.com
+
+Password:
+> iL_j5+tq
+
 ## Actividades de los implicados
 ### Víctor "Kaseem" Chavarría
 - App Design.

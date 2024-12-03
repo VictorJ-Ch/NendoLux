@@ -59,4 +59,4 @@ Password:
 
 ### Jonathan "Zniver" Zavala
 - Shipping Calculator.
-- Receipt.
+- Send Receipt to Email.
